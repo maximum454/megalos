@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&display=swap&subset=cyrillic');
+
+//base
+@import "scss/base/mixin";
+@import "scss/base/class";
+
+
+
+//megalos
+@import "scss/header";
+@import "scss/main";
+@import "scss/footer";
