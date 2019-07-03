@@ -1,3 +1,105 @@
 .header{
-
+	display: grid;
+	grid-template-columns: 230px 1fr 160px 180px;
+	grid-template-rows: 90px;
+	grid-template-areas: "logo title contacts group";
+	border-bottom: 1px solid #4F4F4F;
+	&__logo{
+		grid-area: logo;
+		display: flex;
+		align-items: center;
+		border-right: 1px solid #4F4F4F;
+		img{
+			display: block;
+			max-width: 100%;
+		}
+	}
+	&__logo-name{
+		font-style: normal;
+		font-weight: bold;
+		font-size: 32px;
+		line-height: 29px;
+		color: #4F4F4F;
+	}
+	&__img{
+		max-width: 90px;
+		margin-right: 20px;
+	}
+	&__title{
+		grid-area: title;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		border-right: 1px solid #4F4F4F;
+		h1{
+			font-weight: bold;
+			font-size: 21px;
+			line-height: 18px;
+			color: #4F4F4F;
+			margin: 0 0 5px;
+		}
+		h2{
+			margin: 0;
+			font-size: 11px;
+			line-height: 20px;
+			letter-spacing: 0.04em;
+			text-transform: uppercase;
+			color: #4F4F4F;
+		}
+	}
+	&__contacts{
+		grid-area: contacts;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		border-right: 1px solid #4F4F4F;
+		a{
+			font-size: 14px;
+			line-height: 20px;
+			text-align: right;
+			color: #4F4F4F;
+			text-decoration: none;
+		}
+	}
+	&__group{
+		grid-area: group;
+	}
+	&__btn{
+		display: block;
+		font-weight: bold;
+		font-size: 13px;
+		line-height: 45px;
+		color: #4F4F4F;
+		text-decoration: none;
+		height: 45px;
+		padding-left: 15px;
+		padding-right: 45px;
+		border-bottom: 1px solid #4F4F4F;
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			background-color: #2D9CDB;
+			background-image: url("img/header-IconEmail.svg");
+			background-size: 22px 13px;
+			background-position: center;
+			background-repeat: no-repeat;
+			width: 42px;
+			height: 100%;
+		}
+		&:last-of-type{
+			border-bottom: none;
+		}
+		&.call{
+			&:after{
+				background-color: #DB2D6C;
+				background-image: url("img/header-IconPhone.svg");
+				background-size: 20px;
+			}
+		}
+	}
 }
