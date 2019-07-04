@@ -628,6 +628,17 @@ module.exports = __webpack_require__.p + "img/logo.png";
 
 /***/ }),
 
+/***/ "./src/img/main-news.png":
+/*!*******************************!*\
+  !*** ./src/img/main-news.png ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/main-news.png";
+
+/***/ }),
+
 /***/ "./src/megalos.js":
 /*!************************!*\
   !*** ./src/megalos.js ***!
@@ -643,6 +654,8 @@ __webpack_require__(/*! ./megalos.scss */ "./src/megalos.scss");
 __webpack_require__(/*! ./img/logo.png */ "./src/img/logo.png");
 
 __webpack_require__(/*! ./img/logo-group.png */ "./src/img/logo-group.png");
+
+__webpack_require__(/*! ./img/main-news.png */ "./src/img/main-news.png");
 
 /***/ }),
 
