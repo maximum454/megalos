@@ -628,6 +628,61 @@ module.exports = __webpack_require__.p + "img/logo.png";
 
 /***/ }),
 
+/***/ "./src/img/main-company-1.svg":
+/*!************************************!*\
+  !*** ./src/img/main-company-1.svg ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/main-company-1.svg";
+
+/***/ }),
+
+/***/ "./src/img/main-company-2.svg":
+/*!************************************!*\
+  !*** ./src/img/main-company-2.svg ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/main-company-2.svg";
+
+/***/ }),
+
+/***/ "./src/img/main-company-3.svg":
+/*!************************************!*\
+  !*** ./src/img/main-company-3.svg ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/main-company-3.svg";
+
+/***/ }),
+
+/***/ "./src/img/main-company-4.svg":
+/*!************************************!*\
+  !*** ./src/img/main-company-4.svg ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/main-company-4.svg";
+
+/***/ }),
+
+/***/ "./src/img/main-company-5.svg":
+/*!************************************!*\
+  !*** ./src/img/main-company-5.svg ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/main-company-5.svg";
+
+/***/ }),
+
 /***/ "./src/img/main-news.png":
 /*!*******************************!*\
   !*** ./src/img/main-news.png ***!
@@ -656,6 +711,16 @@ __webpack_require__(/*! ./img/logo.png */ "./src/img/logo.png");
 __webpack_require__(/*! ./img/logo-group.png */ "./src/img/logo-group.png");
 
 __webpack_require__(/*! ./img/main-news.png */ "./src/img/main-news.png");
+
+__webpack_require__(/*! ./img/main-company-1.svg */ "./src/img/main-company-1.svg");
+
+__webpack_require__(/*! ./img/main-company-2.svg */ "./src/img/main-company-2.svg");
+
+__webpack_require__(/*! ./img/main-company-3.svg */ "./src/img/main-company-3.svg");
+
+__webpack_require__(/*! ./img/main-company-4.svg */ "./src/img/main-company-4.svg");
+
+__webpack_require__(/*! ./img/main-company-5.svg */ "./src/img/main-company-5.svg");
 
 /***/ }),
 
