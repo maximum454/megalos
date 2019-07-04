@@ -9,4 +9,113 @@
 		text-align: center;
 		padding-top: 7px;
 	}
+	&__title{
+		padding: 20px;
+		border-right: 1px solid #fff;
+		h5{
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 20px;
+			color: #FFFFFF;
+			margin: 0 0 22px;
+		}
+		p{
+			font-size: 12px;
+			line-height: 20px;
+			letter-spacing: 0.04em;
+			text-transform: uppercase;
+			color: #FFFFFF;
+			margin: 0;
+		}
+	}
+	&__menu{
+		padding: 20px;
+		border-right: 1px solid #fff;
+	}
+	&__list{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	&__item{
+
+	}
+	&__link{
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 20px;
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+	&__box{
+		display: grid;
+		grid-template-columns: 160px 180px;
+		grid-template-rows: 90px;
+		grid-template-areas: "contacts group"
+								"adress adress";
+	}
+	&__contacts{
+		grid-area: contacts;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		border-right: 1px solid #fff;
+		a{
+			font-size: 14px;
+			line-height: 20px;
+			text-align: right;
+			color: #ffffff;
+			text-decoration: none;
+		}
+	}
+	&__group{
+		grid-area: group;
+	}
+	&__btn{
+		display: block;
+		font-weight: bold;
+		font-size: 13px;
+		line-height: 45px;
+		color: #ffffff;
+		text-decoration: none;
+		height: 45px;
+		padding-left: 15px;
+		padding-right: 45px;
+		border-bottom: 1px solid #ffffff;
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			background-color: #2D9CDB;
+			background-image: url("img/header-IconEmail.svg");
+			background-size: 22px 13px;
+			background-position: center;
+			background-repeat: no-repeat;
+			width: 42px;
+			height: 100%;
+			border-left: 1px solid #ffffff;
+		}
+		&:last-of-type{
+			border-bottom: none;
+		}
+		&.call{
+			&:after{
+				background-color: #DB2D6C;
+				background-image: url("img/header-IconPhone.svg");
+				background-size: 20px;
+			}
+		}
+	}
+	&__adress{
+		grid-area: adress;
+		padding: 20px;
+		font-size: 14px;
+		line-height: 20px;
+		color: #FFFFFF;
+		border-top: 1px solid #ffffff;
+	}
+
 }
