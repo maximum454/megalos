@@ -1,5 +1,6 @@
 .main-equipment{
 	margin-bottom: 40px;
+	padding: 20px;
 	&__header{
 		margin-bottom: 25px;
 	}
@@ -97,5 +98,47 @@
 		background-position: center;
 		background-size: 100%;
 		padding: 20px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item{
+		width: 100%;
+		max-width: 224px;
+		height: 101px;
+		padding: 15px 10px 15px 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-end;
+		border: 1px solid #ffffff;
+		&.dop{
+			height: 51px;
+			margin-top: -1px;
+			background-image: url("img/plus-white.svg");
+			background-size: 11px;
+			background-position: 4px 4px;
+			background-repeat: no-repeat;
+		}
+	}
+	&__group{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__anons{
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 18px;
+		color: #FFFFFF;
+		padding: 0;
+		margin: 0;
+
+	}
+	&__name{
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 15px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		margin: 5px 0 0;
 	}
 }
