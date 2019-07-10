@@ -123,6 +123,9 @@
 	&__group{
 		display: flex;
 		flex-wrap: wrap;
+		margin-right: 21px;
+		width: 680px;
+		height: 100px;
 	}
 	&__anons{
 		font-weight: bold;
@@ -140,5 +143,22 @@
 		text-transform: uppercase;
 		color: #FFFFFF;
 		margin: 5px 0 0;
+	}
+	&__logo{
+		width: 195px;
+		h5{
+			font-weight: bold;
+			font-size: 36px;
+			line-height: 30px;
+			color: #25AE6A;
+			margin: 0 0 5px;
+		}
+		p{
+			font-weight: 500;
+			font-size: 11px;
+			line-height: 14px;
+			color: #C4C4C4;
+			padding: 0;
+		}
 	}
 }

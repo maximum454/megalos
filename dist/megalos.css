@@ -658,7 +658,10 @@ html, body {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    margin-right: 21px;
+    width: 680px;
+    height: 100px; }
   .main-equipment__anons {
     font-weight: bold;
     font-size: 15px;
@@ -673,6 +676,20 @@ html, body {
     text-transform: uppercase;
     color: #FFFFFF;
     margin: 5px 0 0; }
+  .main-equipment__logo {
+    width: 195px; }
+    .main-equipment__logo h5 {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 30px;
+      color: #25AE6A;
+      margin: 0 0 5px; }
+    .main-equipment__logo p {
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 14px;
+      color: #C4C4C4;
+      padding: 0; }
 
 .main-products {
   margin-bottom: 40px; }
