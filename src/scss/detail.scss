@@ -29,6 +29,27 @@
 		line-height: 19px;
 		color: #4F4F4F;
 	}
+	&__btn{
+		display:block;
+		font-size: 13px;
+		line-height: 18px;
+		color: #4F4F4F;
+		text-decoration: none;
+		margin-left: 40px;
+		margin-bottom: 24px;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -40px;
+			background-image: url("img/pdf.svg");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 30px;
+			height: 40px;
+		}
+	}
 	h2{
 		font-weight: bold;
 		font-size: 40px;
@@ -65,6 +86,40 @@
 					position: absolute;
 					top: 1px;
 					left: 0;
+				}
+			}
+		}
+		&.sp{
+			li {
+				display: block;
+				position: relative;
+				overflow: hidden;
+				padding: 0;
+				margin-bottom: 8px;
+				font-size: 13px;
+				line-height: 15px;
+				color: #4A4A4A;
+				&:before{
+					display: none;
+				}
+				&:after {
+					content:'';
+					display: block;
+					overflow: hidden;
+					height: 14px;
+					border-bottom: 1px dotted #666
+				}
+				.key {
+					display: block;
+					float: left;
+					z-index: 2;
+					padding-right: 2px;
+				}
+				.value {
+					display: block;
+					float: right;
+					z-index: 2;
+					padding-left: 2px;
 				}
 			}
 		}

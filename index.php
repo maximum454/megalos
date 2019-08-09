@@ -40,6 +40,15 @@ $this->setFrameMode(true);
                 )
             ); ?><br>
         </div>
+        <? if (!empty($arResult["DISPLAY_PROPERTIES"]["FILE"])): ?>
+
+            <h3>Документация:</h3>
+            <?foreach($arResult["DISPLAY_PROPERTIES"]["FILE"]["FILE_VALUE"] as $pid => $arProperty):?>
+                <a class="detail__btn" href="<?=$arProperty['SRC']?>"><?=$arProperty['ORIGINAL_NAME']?></a>
+            <?endforeach;?>
+
+
+        <? endif; ?>
         <div class="detail__category"><?= $arResult["DISPLAY_PROPERTIES"]["CATEGORY"]["VALUE"] ?></div>
         <? if ($arParams["DISPLAY_DATE"] != "N" && $arResult["DISPLAY_ACTIVE_FROM"]): ?>
             <span class="news-date-time"><?= $arResult["DISPLAY_ACTIVE_FROM"] ?></span>
@@ -64,24 +73,14 @@ $this->setFrameMode(true);
             }
             ?><br/>
         <? endforeach; ?>
-        <? /*foreach($arResult["DISPLAY_PROPERTIES"] as $pid=>$arProperty):*/ ?><!--
-
-            <? /*=$arProperty["NAME"]*/ ?>:&nbsp;
-            <? /*if(is_array($arProperty["DISPLAY_VALUE"])):*/ ?>
-                <? /*=implode("&nbsp;/&nbsp;", $arProperty["DISPLAY_VALUE"]);*/ ?>
-            <? /*else:*/ ?>
-                <? /*=$arProperty["DISPLAY_VALUE"];*/ ?>
-            <? /*endif*/ ?>
-            <br />
-        --><? /*endforeach;*/ ?>
 
         <? if (!empty($arResult["DISPLAY_PROPERTIES"]["PLUS"])): ?>
 
             <h3>Плюсы системы <?= $arResult["NAME"] ?>:</h3>
             <ul class="plus">
-            <? foreach ($arResult["DISPLAY_PROPERTIES"]["PLUS"]["VALUE"] as $key=>$value): ?>
-                <li><?=$value?></li>
-            <? endforeach; ?>
+                <? foreach ($arResult["DISPLAY_PROPERTIES"]["PLUS"]["VALUE"] as $key => $value): ?>
+                    <li><?= $value ?></li>
+                <? endforeach; ?>
             </ul>
         <? endif; ?>
 
@@ -91,20 +90,27 @@ $this->setFrameMode(true);
             <p><? echo $arResult["DETAIL_TEXT"]; ?></p>
         <? endif ?>
 
+
+        <? if (!empty($arResult["DISPLAY_PROPERTIES"]["SPECIFICAL"])): ?>
+            <h3>Характеристики комплекса:</h3>
+            <ul class="sp">
+                <?foreach($arResult["DISPLAY_PROPERTIES"]["SPECIFICAL"]["VALUE"] as $k=>$value):?>
+                    <li>
+                        <span class="key"><?=$value?></span>
+                        <span class="value"><?=$arResult["DISPLAY_PROPERTIES"]["SPECIFICAL"]["DESCRIPTION"][$k]?></span>
+                    </li>
+                <?endforeach?>
+            </ul>
+        <? endif; ?>
+
         <? if (!empty($arResult["DISPLAY_PROPERTIES"]["VIDEO"])): ?>
             <h3>Видеопрезентация <?= $arResult["NAME"] ?>:</h3>
-            <iframe width="100%" height="315" src="<?=$arResult["DISPLAY_PROPERTIES"]["VIDEO"]["VALUE"]?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="315" src="<?= $arResult["DISPLAY_PROPERTIES"]["VIDEO"]["VALUE"] ?>"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
         <? endif; ?>
 
-        <? if (!empty($arResult["DISPLAY_PROPERTIES"]["PLUS"])): ?>
 
-            <h3>Документация:</h3>
-
-                <? foreach ($arResult["DISPLAY_PROPERTIES"]["FILE"]["VALUE"] as $key=>$value): ?>
-                    <?=$value?>
-                <? endforeach; ?>
-
-        <? endif; ?>
 
         <? if ($arResult["NAV_RESULT"]): ?>
             <? if ($arParams["DISPLAY_TOP_PAGER"]): ?><?= $arResult["NAV_STRING"] ?><br/>
