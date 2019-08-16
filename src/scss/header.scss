@@ -1,6 +1,6 @@
 .header{
 	display: grid;
-	grid-template-columns: 230px 1fr 160px 180px;
+	grid-template-columns: 230px minmax(243px, 1fr) minmax(129px, 160px) 180px;
 	grid-template-rows: 90px;
 	grid-template-areas: "logo title contacts group";
 	border-bottom: 1px solid #4F4F4F;
@@ -32,6 +32,7 @@
 		justify-content: center;
 		flex-direction: column;
 		border-right: 1px solid #4F4F4F;
+		padding: 0 10px;
 		h1{
 			font-weight: bold;
 			font-size: 21px;
@@ -100,6 +101,44 @@
 				background-color: #DB2D6C;
 				background-image: url("img/header-IconPhone.svg");
 				background-size: 20px;
+			}
+		}
+	}
+	@include r(785){
+		grid-template-columns: 230px minmax(243px, 1fr) 180px;
+		grid-template-rows: 90px;
+		grid-template-areas: "logo title group";
+		&__contacts{
+			display: none;
+		}
+	}
+
+	@include r(655){
+		grid-template-columns: 230px minmax(243px, 1fr) 42px;
+		&__btn{
+			padding: 0;
+			font-size: 0;
+		}
+	}
+	@include r(516){
+		grid-template-columns: 1fr 42px;
+		grid-template-rows: 90px 40px;
+		grid-template-areas: "logo group"
+		"title .";
+
+		&__title{
+			border-top: 1px solid #4F4F4F;
+			padding: 0 20px;
+			align-items: flex-start;
+			h1{
+				font-size: 12px;
+				line-height: 12px;
+				text-align: left;
+			}
+			h2{
+				font-size: 7px;
+				line-height: 10px;
+				text-align: left;
 			}
 		}
 	}

@@ -1,0 +1,116 @@
+.form {
+	max-width: 460px;
+	background-color: #ffffff;
+	padding: 20px;
+	position: relative;
+	.color{
+		background-color: #2D9CDB;
+	}
+	&__close{
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 30px;
+		height: 30px;
+		background-color: #DB2D6C;
+		cursor: pointer;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			background-color: #ffffff;
+			width: 80%;
+			height: 1px;
+			transform: translate(-50%,-50%) rotate(-45deg);
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			background-color: #ffffff;
+			width: 80%;
+			height: 1px;
+			transform: translate(-50%,-50%) rotate(45deg);
+		}
+	}
+	&__inner {
+		border: 1px solid #C4C4C4;
+		padding: 30px;
+	}
+
+	&__title {
+		font-weight: bold;
+		font-size: 21px;
+		line-height: 20px;
+		text-align: center;
+		color: #4A4A4A;
+		margin: 0 0 10px;
+	}
+
+	&__subtitle {
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		color: #4A4A4A;
+		margin: 20px 0 10px;
+	}
+
+	&__anons {
+		font-size: 18px;
+		line-height: 22px;
+		color: #4A4A4A;
+		text-align: center;
+		margin: 0 0 40px;
+	}
+
+	&__input {
+		width: 100%;
+		max-width: 240px;
+		height: 40px;
+		margin: 0 auto 5px;
+		border: 1px solid #C4C4C4;
+		display: block;
+		border-radius: 5px;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 24px;
+		/* identical to box height, or 150% */
+
+		text-align: center;
+		letter-spacing: 0.05em;
+
+		color: #4F4F4F;
+	}
+
+	&__btn {
+		display: block;
+		width: 240px;
+		height: 40px;
+		margin: 20px auto 0;
+		background-color: #DB2D6C;
+		border: none;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 24px;
+		text-align: center;
+		color: #FFFFFF;
+	}
+	&__textarea{
+		width: 100%;
+		max-width: 240px;
+		padding: 10px;
+		margin: 0 auto 5px;
+		border: 1px solid #C4C4C4;
+		display: block;
+		border-radius: 5px;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 24px;
+		text-align: center;
+		letter-spacing: 0.05em;
+		color: #4F4F4F;
+	}
+}

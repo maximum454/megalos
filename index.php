@@ -1,146 +1,226 @@
-<? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
-/** @var array $arParams */
-/** @var array $arResult */
-/** @global CMain $APPLICATION */
-/** @global CUser $USER */
-/** @global CDatabase $DB */
-/** @var CBitrixComponentTemplate $this */
-/** @var string $templateName */
-/** @var string $templateFile */
-/** @var string $templateFolder */
-/** @var string $componentPath */
-/** @var CBitrixComponent $component */
-$this->setFrameMode(true);
+<?
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Оборудование для ЖКХ и промышленности");
 ?>
-<section class="detail">
-    <aside class="detail__aside">
-        <? if ($arParams["DISPLAY_PICTURE"] != "N" && is_array($arResult["DETAIL_PICTURE"])): ?>
-            <div class="detail__img">
-                <img
-                        class="detail_picture"
-                        border="0"
-                        src="<?= $arResult["DETAIL_PICTURE"]["SRC"] ?>"
-                        width="<?= $arResult["DETAIL_PICTURE"]["WIDTH"] ?>"
-                        height="<?= $arResult["DETAIL_PICTURE"]["HEIGHT"] ?>"
-                        alt="<?= $arResult["DETAIL_PICTURE"]["ALT"] ?>"
-                        title="<?= $arResult["DETAIL_PICTURE"]["TITLE"] ?>"
-                />
+<?$APPLICATION->IncludeComponent(
+    "bitrix:news.list",
+    "page-equipment",
+    array(
+        "ACTIVE_DATE_FORMAT" => "d.m.Y",
+        "ADD_SECTIONS_CHAIN" => "N",
+        "AJAX_MODE" => "N",
+        "AJAX_OPTION_ADDITIONAL" => "",
+        "AJAX_OPTION_HISTORY" => "N",
+        "AJAX_OPTION_JUMP" => "N",
+        "AJAX_OPTION_STYLE" => "N",
+        "CACHE_FILTER" => "N",
+        "CACHE_GROUPS" => "Y",
+        "CACHE_TIME" => "36000000",
+        "CACHE_TYPE" => "A",
+        "CHECK_DATES" => "Y",
+        "DETAIL_URL" => "",
+        "DISPLAY_BOTTOM_PAGER" => "N",
+        "DISPLAY_DATE" => "N",
+        "DISPLAY_NAME" => "Y",
+        "DISPLAY_PICTURE" => "Y",
+        "DISPLAY_PREVIEW_TEXT" => "Y",
+        "DISPLAY_TOP_PAGER" => "N",
+        "FIELD_CODE" => array(
+            0 => "DETAIL_TEXT",
+            1 => "",
+        ),
+        "FILTER_NAME" => "",
+        "HIDE_LINK_WHEN_NO_DETAIL" => "N",
+        "IBLOCK_ID" => "10",
+        "IBLOCK_TYPE" => "equipment",
+        "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+        "INCLUDE_SUBSECTIONS" => "Y",
+        "MESSAGE_404" => "",
+        "NEWS_COUNT" => "1",
+        "PAGER_BASE_LINK_ENABLE" => "N",
+        "PAGER_DESC_NUMBERING" => "N",
+        "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+        "PAGER_SHOW_ALL" => "N",
+        "PAGER_SHOW_ALWAYS" => "N",
+        "PAGER_TEMPLATE" => ".default",
+        "PAGER_TITLE" => "Новости",
+        "PARENT_SECTION" => "",
+        "PARENT_SECTION_CODE" => "",
+        "PREVIEW_TRUNCATE_LEN" => "",
+        "PROPERTY_CODE" => array(
+            0 => "COL",
+            1 => "FILE",
+            2 => "",
+        ),
+        "SET_BROWSER_TITLE" => "N",
+        "SET_LAST_MODIFIED" => "N",
+        "SET_META_DESCRIPTION" => "N",
+        "SET_META_KEYWORDS" => "N",
+        "SET_STATUS_404" => "N",
+        "SET_TITLE" => "N",
+        "SHOW_404" => "N",
+        "SORT_BY1" => "ID",
+        "SORT_BY2" => "SORT",
+        "SORT_ORDER1" => "ASC",
+        "SORT_ORDER2" => "ASC",
+        "STRICT_SECTION_CHECK" => "N",
+        "COMPONENT_TEMPLATE" => "page-equipment"
+    ),
+    false
+);?><br>
+<section class="main-equipment">
+    <div class="main-equipment__header">
+        <h2 class="main-equipment__title">Каталог оборудования для ЖКХ и промышленности</h2>
+    </div>
+    <div class="main-equipment__select">
+        <?$APPLICATION->IncludeComponent(
+            "bitrix:catalog.section.list",
+            "section-equipment",
+            array(
+                "ADD_SECTIONS_CHAIN" => "Y",
+                "CACHE_FILTER" => "N",
+                "CACHE_GROUPS" => "Y",
+                "CACHE_TIME" => "36000000",
+                "CACHE_TYPE" => "A",
+                "COUNT_ELEMENTS" => "N",
+                "FILTER_NAME" => "sectionsFilter",
+                "IBLOCK_ID" => "11",
+                "IBLOCK_TYPE" => "equipment",
+                "SECTION_CODE" => "",
+                "SECTION_FIELDS" => array(
+                    0 => "",
+                    1 => "",
+                ),
+                "SECTION_ID" => $_REQUEST["SECTION_ID"],
+                "SECTION_URL" => "",
+                "SECTION_USER_FIELDS" => array(
+                    0 => "UF_CATEGORY",
+                    1 => "",
+                ),
+                "SHOW_PARENT_NAME" => "Y",
+                "TOP_DEPTH" => "2",
+                "VIEW_MODE" => "TEXT",
+                "COMPONENT_TEMPLATE" => "section-equipment"
+            ),
+            false,
+            array(
+                "ACTIVE_COMPONENT" => "Y"
+            )
+        );?>
+        <div class="main-equipment__group">
+            <div class="main-equipment__item dop">
+                <p class="main-equipment__anons">
+                    Осаждающая химия
+                </p>
             </div>
-        <? endif ?>
-    </aside>
-    <div class="detail__contant">
-        <div class="detail__breadcrumb">
-            <? $APPLICATION->IncludeComponent(
-                "bitrix:breadcrumb",
-                "",
-                Array(
-                    "PATH" => "2",
-                    "SITE_ID" => "s1",
-                    "START_FROM" => "0"
-                )
-            ); ?><br>
+            <div class="main-equipment__item dop">
+                <p class="main-equipment__anons">
+                    Биофильтры
+                </p>
+            </div>
+            <div class="main-equipment__item dop">
+                <p class="main-equipment__anons">
+                    Горловина
+                </p>
+            </div>
+            <div class="main-equipment__item dop">
+                <p class="main-equipment__anons">
+                    Крышки
+                </p>
+            </div>
+            <div class="main-equipment__item dop">
+                <p class="main-equipment__anons">
+                    Горловина
+                </p>
+            </div>
+            <div class="main-equipment__item dop">
+                <p class="main-equipment__anons">
+                    Крышки
+                </p>
+            </div>
         </div>
-        <? if (!empty($arResult["DISPLAY_PROPERTIES"]["FILE"])): ?>
-
-            <h3>Документация:</h3>
-            <?foreach($arResult["DISPLAY_PROPERTIES"]["FILE"]["FILE_VALUE"] as $pid => $arProperty):?>
-                <a class="detail__btn" href="<?=$arProperty['SRC']?>"><?=$arProperty['ORIGINAL_NAME']?></a>
-            <?endforeach;?>
-
-
-        <? endif; ?>
-        <div class="detail__category"><?= $arResult["DISPLAY_PROPERTIES"]["CATEGORY"]["VALUE"] ?></div>
-        <? if ($arParams["DISPLAY_DATE"] != "N" && $arResult["DISPLAY_ACTIVE_FROM"]): ?>
-            <span class="news-date-time"><?= $arResult["DISPLAY_ACTIVE_FROM"] ?></span>
-        <? endif; ?>
-        <? if ($arParams["DISPLAY_NAME"] != "N" && $arResult["NAME"]): ?>
-            <h2><?= $arResult["NAME"] ?></h2>
-        <? endif; ?>
-        <? if ($arParams["DISPLAY_PREVIEW_TEXT"] != "N" && $arResult["FIELDS"]["PREVIEW_TEXT"]): ?>
-            <p><?= $arResult["FIELDS"]["PREVIEW_TEXT"];
-                unset($arResult["FIELDS"]["PREVIEW_TEXT"]); ?></p>
-        <? endif; ?>
-
-        <? foreach ($arResult["FIELDS"] as $code => $value):
-            if ('PREVIEW_PICTURE' == $code || 'DETAIL_PICTURE' == $code) {
-                ?><?= GetMessage("IBLOCK_FIELD_" . $code) ?>:&nbsp;<?
-                if (!empty($value) && is_array($value)) {
-                    ?><img border="0" src="<?= $value["SRC"] ?>" width="<?= $value["WIDTH"] ?>"
-                           height="<?= $value["HEIGHT"] ?>"><?
-                }
-            } else {
-                ?><?= GetMessage("IBLOCK_FIELD_" . $code) ?>:&nbsp;<?= $value; ?><?
-            }
-            ?><br/>
-        <? endforeach; ?>
-
-        <? if (!empty($arResult["DISPLAY_PROPERTIES"]["PLUS"])): ?>
-
-            <h3>Плюсы системы <?= $arResult["NAME"] ?>:</h3>
-            <ul class="plus">
-                <? foreach ($arResult["DISPLAY_PROPERTIES"]["PLUS"]["VALUE"] as $key => $value): ?>
-                    <li><?= $value ?></li>
-                <? endforeach; ?>
-            </ul>
-        <? endif; ?>
-
-
-        <? if (strlen($arResult["DETAIL_TEXT"]) > 0): ?>
-            <h3>Описание работы <?= $arResult["NAME"] ?>:</h3>
-            <p><? echo $arResult["DETAIL_TEXT"]; ?></p>
-        <? endif ?>
-
-
-        <? if (!empty($arResult["DISPLAY_PROPERTIES"]["SPECIFICAL"])): ?>
-            <h3>Характеристики комплекса:</h3>
-            <ul class="sp">
-                <?foreach($arResult["DISPLAY_PROPERTIES"]["SPECIFICAL"]["VALUE"] as $k=>$value):?>
-                    <li>
-                        <span class="key"><?=$value?></span>
-                        <span class="value"><?=$arResult["DISPLAY_PROPERTIES"]["SPECIFICAL"]["DESCRIPTION"][$k]?></span>
-                    </li>
-                <?endforeach?>
-            </ul>
-        <? endif; ?>
-
-        <? if (!empty($arResult["DISPLAY_PROPERTIES"]["VIDEO"])): ?>
-            <h3>Видеопрезентация <?= $arResult["NAME"] ?>:</h3>
-            <iframe width="100%" height="315" src="<?= $arResult["DISPLAY_PROPERTIES"]["VIDEO"]["VALUE"] ?>"
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-        <? endif; ?>
-
-
-
-        <? if ($arResult["NAV_RESULT"]): ?>
-            <? if ($arParams["DISPLAY_TOP_PAGER"]): ?><?= $arResult["NAV_STRING"] ?><br/>
-            <? endif; ?>
-            <? echo $arResult["NAV_TEXT"]; ?>
-            <? if ($arParams["DISPLAY_BOTTOM_PAGER"]): ?><br/>
-                <?= $arResult["NAV_STRING"] ?>
-            <? endif; ?>
-        <? endif; ?>
-
-        <? if (array_key_exists("USE_SHARE", $arParams) && $arParams["USE_SHARE"] == "Y") {
-            ?>
-            <div class="news-detail-share">
-                <noindex>
-                    <?
-                    $APPLICATION->IncludeComponent("bitrix:main.share", "", array(
-                        "HANDLERS" => $arParams["SHARE_HANDLERS"],
-                        "PAGE_URL" => $arResult["~DETAIL_PAGE_URL"],
-                        "PAGE_TITLE" => $arResult["~NAME"],
-                        "SHORTEN_URL_LOGIN" => $arParams["SHARE_SHORTEN_URL_LOGIN"],
-                        "SHORTEN_URL_KEY" => $arParams["SHARE_SHORTEN_URL_KEY"],
-                        "HIDE" => $arParams["SHARE_HIDE"],
-                    ),
-                        $component,
-                        array("HIDE_ICONS" => "Y")
-                    );
-                    ?>
-                </noindex>
-            </div>
-            <?
-        } ?>
+        <div class="main-equipment__logo">
+            <h5>Alta Group</h5>
+            <p>
+                Малогабаритное оборудование для&nbsp;биологической и&nbsp;химической очистки бытовых и&nbsp;производственных сточных вод
+            </p>
+        </div>
     </div>
 </section>
+<section class="main-news">
+    <div class="main-news__header">
+        <h2 class="main-news__title">Наши проекты</h2>
+    </div>
+    <?
+    global $arrFilterRealize;
+    $arrFilterRealize = array("ACTIVE"=>"Y","PROPERTY_REALIZE_VALUE"=>"ЖКХ и промышленность");
+    ?>
+    <?$APPLICATION->IncludeComponent(
+        "bitrix:news.list",
+        "main-projects",
+        array(
+            "ACTIVE_DATE_FORMAT" => "d.m.Y",
+            "ADD_SECTIONS_CHAIN" => "N",
+            "AJAX_MODE" => "N",
+            "AJAX_OPTION_ADDITIONAL" => "",
+            "AJAX_OPTION_HISTORY" => "N",
+            "AJAX_OPTION_JUMP" => "N",
+            "AJAX_OPTION_STYLE" => "Y",
+            "CACHE_FILTER" => "N",
+            "CACHE_GROUPS" => "Y",
+            "CACHE_TIME" => "36000000",
+            "CACHE_TYPE" => "A",
+            "CHECK_DATES" => "Y",
+            "DETAIL_URL" => "",
+            "DISPLAY_BOTTOM_PAGER" => "Y",
+            "DISPLAY_DATE" => "Y",
+            "DISPLAY_NAME" => "Y",
+            "DISPLAY_PICTURE" => "Y",
+            "DISPLAY_PREVIEW_TEXT" => "Y",
+            "DISPLAY_TOP_PAGER" => "N",
+            "FIELD_CODE" => array(
+                0 => "",
+                1 => "",
+            ),
+            "FILTER_NAME" => "arrFilterRealize",
+            "HIDE_LINK_WHEN_NO_DETAIL" => "N",
+            "IBLOCK_ID" => "1",
+            "IBLOCK_TYPE" => "projects",
+            "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+            "INCLUDE_SUBSECTIONS" => "Y",
+            "MESSAGE_404" => "",
+            "NEWS_COUNT" => "8",
+            "PAGER_BASE_LINK_ENABLE" => "N",
+            "PAGER_DESC_NUMBERING" => "N",
+            "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+            "PAGER_SHOW_ALL" => "N",
+            "PAGER_SHOW_ALWAYS" => "N",
+            "PAGER_TEMPLATE" => ".default",
+            "PAGER_TITLE" => "Новости",
+            "PARENT_SECTION" => "",
+            "PARENT_SECTION_CODE" => "",
+            "PREVIEW_TRUNCATE_LEN" => "",
+            "PROPERTY_CODE" => array(
+                0 => "REGION",
+                1 => "REALIZE",
+                2 => "",
+            ),
+            "SET_BROWSER_TITLE" => "N",
+            "SET_LAST_MODIFIED" => "N",
+            "SET_META_DESCRIPTION" => "N",
+            "SET_META_KEYWORDS" => "N",
+            "SET_STATUS_404" => "N",
+            "SET_TITLE" => "N",
+            "SHOW_404" => "N",
+            "SORT_BY1" => "ACTIVE_FROM",
+            "SORT_BY2" => "SORT",
+            "SORT_ORDER1" => "DESC",
+            "SORT_ORDER2" => "ASC",
+            "STRICT_SECTION_CHECK" => "N",
+            "COMPONENT_TEMPLATE" => "main-projects"
+        ),
+        false
+    );?>
+    <footer class="main-news__footer"> <a class="main-news__btn" href="/projects/">Больше проектов</a> </footer>
+</section>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

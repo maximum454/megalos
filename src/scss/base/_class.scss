@@ -9,9 +9,12 @@ html, body {
 }
 
 .wrp {
-	width: 980px;
+	max-width: 980px;
 	margin: 0 auto;
 	border: 1px solid #4F4F4F;
+}
+.hidden{
+	display: none;
 }
 
 

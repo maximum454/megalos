@@ -94,4 +94,12 @@
 		color: #4F4F4F;
 		text-decoration: none;
 	}
+	@include r(560){
+		&__main{
+			flex-direction: column;
+		}
+		&__item{
+			width: 260px;
+		}
+	}
 }

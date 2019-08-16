@@ -1,5 +1,7 @@
 import './megalos.scss'
+import './js/jquery.arcticmodal-0.3.min'
 import './js/slick.min'
+
 
 import './img/logo.png'
 import './img/logo-group.png'
@@ -21,5 +23,10 @@ $('.js-slider').slick({
     cssEase: 'linear'
 });
 
+
+/*Скрипт для модальных окон*/
+$('.popap_box').click(function() {
+    $('#modalbox_' + $(this).data('body')).arcticmodal();
+});
 
 

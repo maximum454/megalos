@@ -100,4 +100,23 @@
 		color: #4F4F4F;
 		text-decoration: none;
 	}
+	@include r(980){
+		&__main{
+			grid-template-columns: repeat(4,1fr);
+			grid-template-rows: auto;
+		}
+	}
+	@include r(768){
+		&__main{
+			grid-template-columns: repeat(2,1fr);
+			grid-template-rows: auto;
+		}
+	}
+	@include r(415){
+		&__main{
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+		}
+	}
+
 }

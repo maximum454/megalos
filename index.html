@@ -29,15 +29,19 @@
         </div>
     </header>
     <nav class="nav">
-        <ul class="nav__menu">
-            <li class="nav__item"><a class="nav__link" href="#">Оборудование</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Документация</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Проекты</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Новости</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">О компании</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+        <ul id="horizontal-multilevel-menu" class="nav__menu">
+            <li><a href="/equipment/" class="root-item-selected">Оборудование</a>
+                <ul>
+                    <li class="item-selected"><a href="/equipment/prom/">ЖКХ и промышленность</a></li>
+                    <li><a href="/equipment/home/">Частное домостроение</a></li>
+                </ul>
+            </li>
+            <li><a href="/documentation/" class="root-item">Документация</a></li>
+            <li><a href="/projects/" class="root-item">Проекты</a></li>
+            <li><a href="/news/" class="root-item">Новости</a></li>
+            <li><a href="/about/" class="root-item">О компании</a></li>
+            <li><a href="/contacts/" class="root-item">Контакты</a></li>
         </ul>
-
     </nav>
     <main>
         <section class="slider js-slider">
@@ -198,99 +202,98 @@
                 </div>
             </div>
 
-            <div class="main-equipment__select">
-                <div class="main-equipment__item">
+            <ul class="main-equipment__select">
+                <li class="main-equipment__item">
                     <p class="main-equipment__anons">Очистные сооружения
                         хозяйственно-бытовых
                         и промышленных стоков</p>
                     <h4 class="main-equipment__name">Alta Air Master</h4>
-                </div>
-                <div class="main-equipment__item">
+                </li>
+                <li class="main-equipment__item">
                     <p class="main-equipment__anons">Очистные сооружения
                         поверхностных стоков
                         / ливневых, дождевых /</p>
                     <h4 class="main-equipment__name">Alta Air Master</h4>
-                </div>
-                <div class="main-equipment__item">
+                </li>
+                <li class="main-equipment__item">
                     <p class="main-equipment__anons">Установки
                         обеззараживания сточных
                         вод ультрафиолетом</p>
                     <h4 class="main-equipment__name">Alta Air Master</h4>
-                </div>
-                <div class="main-equipment__item">
+                </li>
+                <li class="main-equipment__item">
                     <p class="main-equipment__anons">Блоки доочистки стока от особо стойких
                         загрязнений</p>
                     <h4 class="main-equipment__name">Alta Air Master</h4>
-                </div>
+                </li>
 
-                <div class="main-equipment__item">
+                <li class="main-equipment__item">
                     <p class="main-equipment__anons">Канализационные
                         насосные станции</p>
                     <h4 class="main-equipment__name">Alta Air Master</h4>
-                </div>
-                <div class="main-equipment__item">
+                </li>
+                <li class="main-equipment__item">
                     <p class="main-equipment__anons">Шкафы и блоки
                         управления насосами</p>
                     <h4 class="main-equipment__name">Alta Air Master</h4>
-                </div>
-                <div class="main-equipment__item">
+                </li>
+                <li class="main-equipment__item">
                     <p class="main-equipment__anons">Система удаленного
-                        мониторинга /
-                        SMS оповещения</p>
+                        мониторинга / SMS оповещения</p>
                     <h4 class="main-equipment__name">Alta Air Master</h4>
-                </div>
-                <div class="main-equipment__item">
+                </li>
+                <li class="main-equipment__item">
                     <p class="main-equipment__anons">Система контроля
                         раздела уровня сред</p>
                     <h4 class="main-equipment__name">Alta Air Master</h4>
-                </div>
-                <div class="main-equipment__item">
+                </li>
+                <li class="main-equipment__item">
                     <p class="main-equipment__anons">Накопительные
                         ёмкости</p>
                     <h4 class="main-equipment__name">Alta Air Master</h4>
-                </div>
-                <div class="main-equipment__item">
+                </li>
+                <li class="main-equipment__item">
                     <p class="main-equipment__anons">Колодцы</p>
                     <h4 class="main-equipment__name">Alta Air Master</h4>
-                </div>
-                <div class="main-equipment__item">
+                </li>
+                <li class="main-equipment__item">
                     <p class="main-equipment__anons">Жироуловители</p>
                     <h4 class="main-equipment__name">Alta Air Master</h4>
-                </div>
-                <div class="main-equipment__item">
+                </li>
+                <li class="main-equipment__item">
                     <p class="main-equipment__anons">Пескоуловители</p>
                     <h4 class="main-equipment__name">Alta Air Master</h4>
-                </div>
-                <div class="main-equipment__item">
+                </li>
+                <li class="main-equipment__item">
                     <p class="main-equipment__anons">Муфты</p>
                     <h4 class="main-equipment__name">Alta Air Master</h4>
-                </div>
-                <div class="main-equipment__group">
-                    <div class="main-equipment__item dop">
+                </li>
+                <ul class="main-equipment__group">
+                    <li class="main-equipment__item dop">
                         <p class="main-equipment__anons">Осаждающая химия</p>
-                    </div>
-                    <div class="main-equipment__item dop">
+                    </li>
+                    <li class="main-equipment__item dop">
                         <p class="main-equipment__anons">Биофильтры</p>
-                    </div>
-                    <div class="main-equipment__item dop">
+                    </li>
+                    <li class="main-equipment__item dop">
                         <p class="main-equipment__anons">Горловина</p>
-                    </div>
-                    <div class="main-equipment__item dop">
+                    </li>
+                    <li class="main-equipment__item dop">
                         <p class="main-equipment__anons">Крышки</p>
-                    </div>
-                    <div class="main-equipment__item dop">
+                    </li>
+                    <li class="main-equipment__item dop">
                         <p class="main-equipment__anons">Горловина</p>
-                    </div>
-                    <div class="main-equipment__item dop">
+                    </li>
+                    <li class="main-equipment__item dop">
                         <p class="main-equipment__anons">Крышки</p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
                 <div class="main-equipment__logo">
                     <h5>Alta Group</h5>
                     <p>Малогабаритное оборудование для биологической
                         и химической очистки бытовых и производственных сточных вод</p>
                 </div>
-            </div>
+            </ul>
         </section>
 
         <section class="main-news">
@@ -407,16 +410,17 @@
                         <h3 class="main-news__name">Ужесточение требований к очистке стоков предприятий</h3>
                         <p class="main-news__anons">Хозяйственно-бытовой сток / Производительность: 2 000 м³</p>
                     </a>
-                </article><article class="main-news__item">
-                <a href="#" class="main-news__img">
-                    <img src="dist/img/main-news.png" alt="">
-                    <div class="main-news__mark">Нур-Султан</div>
-                </a>
-                <a class="main-news__link" href="#">
-                    <h3 class="main-news__name">Ужесточение требований к очистке стоков предприятий</h3>
-                    <p class="main-news__anons">Хозяйственно-бытовой сток / Производительность: 2 000 м³</p>
-                </a>
-            </article>
+                </article>
+                <article class="main-news__item">
+                    <a href="#" class="main-news__img">
+                        <img src="dist/img/main-news.png" alt="">
+                        <div class="main-news__mark">Нур-Султан</div>
+                    </a>
+                    <a class="main-news__link" href="#">
+                        <h3 class="main-news__name">Ужесточение требований к очистке стоков предприятий</h3>
+                        <p class="main-news__anons">Хозяйственно-бытовой сток / Производительность: 2 000 м³</p>
+                    </a>
+                </article>
 
             </div>
             <footer class="main-news__footer">
@@ -451,8 +455,8 @@
                 <a href="mailto:info@megalos.kz">info@megalos.kz</a>
             </div>
             <div class="footer__group">
-                <a href="#" class="footer__btn call">Заказать звонок</a>
-                <a href="#" class="footer__btn">Отправить запрос</a>
+                <a href="#call" class="footer__btn call popap_box" data-body="call">Заказать звонок</a>
+                <a href="#feedback" class="footer__btn popap_box" data-body="feedback">Отправить запрос</a>
             </div>
             <div class="footer__adress">
                 Республика Казахстан, Астана,
@@ -460,6 +464,37 @@
             </div>
         </div>
     </footer>
+    <div class="hidden">
+        <div id="modalbox_call">
+            <form class="form" action="">
+                <div class="form__close arcticmodal-close"></div>
+                <div class="form__inner">
+                    <p class="form__anons">Оставьте свой номер телефона,
+                        и мы обязательно перезвоним вам</p>
+                    <input class="form__input" type="text" placeholder="+7 ___ ___-__-__">
+                    <input class="form__btn" type="text" value="Заказать звонок">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="hidden">
+        <div id="modalbox_feedback">
+            <div class="modal__inner">
+                <form class="form" action="">
+                    <div class="form__close color arcticmodal-close"></div>
+                    <div class="form__inner">
+                        <h5 class="form__title">Как вас зовут?</h5>
+                        <input class="form__input" type="text" placeholder="Ваше имя">
+                        <input class="form__input" type="text" placeholder="Ваша почта">
+                        <input class="form__input" type="text" placeholder="+7 ___ ___-__-__">
+                        <h5 class="form__subtitle">Ваш комментарий</h5>
+                        <textarea class="form__textarea" name="" id="" cols="10" rows="4"></textarea>
+                        <input class="form__btn color" type="text" value="Отправить запрос">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 <script src="dist/megalos.js"></script>
 </body>

@@ -96,14 +96,16 @@
 		background-image: url("img/main-equipment-bg.jpg");
 		background-repeat: no-repeat;
 		background-position: center;
-		background-size: 100%;
+		background-size: cover;
 		padding: 20px;
+		margin: 0;
+		list-style: none;
 		display: flex;
 		flex-wrap: wrap;
 	}
 	&__item{
 		width: 100%;
-		max-width: 224px;
+		max-width: 25%;
 		height: 101px;
 		padding: 15px 10px 15px 15px;
 		display: flex;
@@ -120,12 +122,18 @@
 			background-repeat: no-repeat;
 		}
 	}
+	&__link{
+		display: block;
+		text-decoration: none;
+	}
 	&__group{
 		display: flex;
 		flex-wrap: wrap;
-		margin-right: 21px;
+		margin: 0 21px 0 0;
 		width: 680px;
 		height: 100px;
+		padding: 0;
+		list-style: none;
 	}
 	&__anons{
 		font-weight: bold;
@@ -159,6 +167,80 @@
 			line-height: 14px;
 			color: #C4C4C4;
 			padding: 0;
+		}
+	}
+	@include r(980){
+		&__category{
+			padding: 0;
+			h3{
+				font-size: 18px;
+				line-height: 1;
+				margin: 0 0 10px;
+
+			}
+			P{
+				font-size: 13px;
+			}
+		}
+		&__item{
+			height: auto;
+			min-height: 101px;
+		}
+		&__anons{
+			font-size: 14px;
+			line-height: 1;
+		}
+		&__group{
+			margin-right: 0;
+			width: 100%;
+			height: auto;
+		}
+	}
+	@include r(680){
+		&__category{
+			display: none;
+		}
+		&__item{
+			max-width: 33.333%;
+			&.dop{
+				min-height: auto;
+				height: 45px;
+			}
+		}
+		&__logo{
+			display: none;
+		}
+	}
+	@include r(540){
+		&__item{
+			max-width: 50%;
+			&.dop{
+				min-height: auto;
+				height: 45px;
+			}
+		}
+		&__logo{
+			display: none;
+		}
+	}
+	@include r(415){
+		&__item{
+			max-width: 100%;
+			&.dop{
+				min-height: auto;
+				height: 45px;
+			}
+		}
+		&__logo{
+			display: none;
+		}
+		&__anons{
+			font-size: 16px;
+			line-height: 1;
+		}
+		&__name{
+			font-size: 18px;
+			margin-top: 13px;
 		}
 	}
 }

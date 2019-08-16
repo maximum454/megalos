@@ -1,7 +1,6 @@
 .footer{
 	display: grid;
-	grid-template-columns: 100px 200px 340px 1fr;
-	grid-template-rows: 180px;
+	grid-template-columns: 100px 200px  minmax( 206px,340px) 1fr;
 	grid-template-areas: "logo title contacts group";
 	background-color: #2D9CDB;
 	&__logo{
@@ -49,7 +48,7 @@
 	}
 	&__box{
 		display: grid;
-		grid-template-columns: 160px 180px;
+		grid-template-columns: minmax(135px , 160px)  180px;
 		grid-template-rows: 90px;
 		grid-template-areas: "contacts group"
 								"adress adress";
@@ -74,7 +73,6 @@
 	}
 	&__btn{
 		display: block;
-		font-weight: bold;
 		font-size: 13px;
 		line-height: 45px;
 		color: #ffffff;
@@ -117,5 +115,68 @@
 		color: #FFFFFF;
 		border-top: 1px solid #ffffff;
 	}
-
+	@include r(823){
+		grid-template-columns: 100px 200px 206px 1fr;
+		&__box{
+			grid-template-columns: minmax(100px, 290px);
+			grid-template-areas: "adress adress"
+			"contacts contacts";
+		}
+		&__group{
+			display: none;
+		}
+		&__contacts{
+			align-items: flex-start;
+			padding: 0 20px;
+			border-right: none;
+		}
+	}
+	@include r(680){
+		grid-template-columns: 206px 1fr;
+		grid-template-areas: "logo title" "group contacts";
+	}
+	@include r(460){
+		grid-template-columns: 1fr;
+		grid-template-areas: "logo" "title" "contacts";
+		text-align: center;
+		&__contacts{
+			align-items: center;
+			padding: 20px;
+			a{
+				font-size: 12px;
+			}
+		}
+		&__title{
+			padding: 20px;
+			border-right: 1px solid #fff;
+			h5{
+				margin: 0 0 5px;
+			}
+			p{
+				font-size: 10px;
+			}
+		}
+		&__menu{
+			padding: 0 0 20px;
+		}
+		&__adress{
+			max-width: 200px;
+			margin: 0 auto;
+			font-size: 12px;
+		}
+		&__item{
+			padding: 10px;
+			border-bottom: 1px solid #ffffff;
+			&:nth-child(1){
+				max-width: 240px;
+				margin: 0 auto 10px;
+				border: 1px solid #ffffff;
+			}
+			&:nth-child(2){
+				max-width: 240px;
+				margin: 0 auto 30px;
+				border: 1px solid #ffffff;
+			}
+		}
+	}
 }
