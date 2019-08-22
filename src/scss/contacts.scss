@@ -2,6 +2,11 @@
 	text-align: center;
 	margin: 77px 0 50px;
 	padding: 0 20px;
+	display: grid;
+	grid-template-columns: 40% 60%;
+	grid-column-gap: 20px;
+	&__info{
+	}
 	h1{
 		font-weight: bold;
 		font-size: 48px;
@@ -31,6 +36,12 @@
 		text-decoration: none;
 	}
 	&__map{
-		margin-top: 55px;
+		margin-top: 0;
+	}
+	@include r(980){
+		grid-template-columns: 1fr;
+		&__map{
+			margin-top: 55px;
+		}
 	}
 }

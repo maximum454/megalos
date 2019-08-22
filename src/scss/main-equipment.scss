@@ -114,6 +114,7 @@
 		justify-content: flex-end;
 		border: 1px solid #ffffff;
 		&.dop{
+			max-width: 33%;
 			height: 51px;
 			margin-top: -1px;
 			background-image: url("img/plus-white.svg");

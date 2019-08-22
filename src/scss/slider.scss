@@ -3,6 +3,11 @@
 	margin: 0 auto;
 	&__item{
 		position: relative;
+		display: block;
+		text-decoration: none;
+		&:hover{
+			text-decoration: none;
+		}
 	}
 	&__caption{
 		position: absolute;
