@@ -99,6 +99,9 @@
 		&:last-of-type{
 			border-bottom: none;
 		}
+		&:hover{
+			opacity: .7;
+		}
 		&.call{
 			&:after{
 				background-color: #DB2D6C;

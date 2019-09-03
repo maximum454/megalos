@@ -36,11 +36,11 @@
 	&__main{
 		display: grid;
 		grid-template-columns: repeat(4,245px);
-		grid-template-rows: 310px;
+		grid-template-rows: auto;
 		margin-bottom: 20px;
 	}
 	&__item{
-		padding: 20px;
+		padding: 10px 20px;
 		border-right: 1px solid #4F4F4F;
 		&:last-of-type{
 			border-right:  none;
@@ -83,7 +83,7 @@
 		font-size: 13px;
 		line-height: 16px;
 		color: #4A4A4A;
-		margin: 0;
+		margin: 0 0 10px;
 	}
 	&__footer{
 
@@ -99,6 +99,15 @@
 		text-align: center;
 		color: #4F4F4F;
 		text-decoration: none;
+	}
+	&__perfomace{
+		font-size: 11px;
+		line-height: 16px;
+		color: #4A4A4A;
+		margin: 0;
+		b{
+			font-size: 14px;
+		}
 	}
 	@include r(980){
 		&__main{

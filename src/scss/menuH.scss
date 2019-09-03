@@ -1,97 +1,279 @@
-.bx-pagination {
-	margin: 10px 0;
-}
-.bx-pagination .bx-pagination-container {
-	text-align: center;
-	position: relative;
-}
-.bx-pagination .bx-pagination-container ul {
-	padding: 0;
+/**Top menu**/
+#horizontal-multilevel-menu,
+#horizontal-multilevel-menu ul {
 	margin: 0;
+	padding: 0;
+	min-height: 41px;
+	width: 100%;
 	list-style: none;
-	display: inline-block;
-}
-.bx-pagination .bx-pagination-container ul li {
-	display: inline-block;
-	margin: 0 2px;
-}
-.bx-pagination .bx-pagination-container ul li span{
-	-webkit-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
-	-moz-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
-	-ms-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
-	-o-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
-	transition: color .3s ease, background-color .3s ease, border-color .3s ease;
-	background: #eff0f1;
-	padding: 0 8px;
-	display: block;
-	height: 32px;
-	min-width: 32px;
-	line-height: 32px;
-	color: #444;
-	font-size: 14px;
-	border-radius: 16px;
-	vertical-align: middle;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-.bx-pagination .bx-pagination-container ul li a {
-	text-decoration: none;
-	display: block;
-	border-radius: 16px;
-	height: 32px;
-	min-width: 32px;
-	line-height: 32px;
-	color: #444;
-	vertical-align: middle;
-}
-.bx-pagination .bx-pagination-container ul li a:hover span{
-	background: #DADADA;
-}
-.bx-pagination .bx-pagination-container ul li.bx-active span{
-	background: #0083d1;
-	color: #fff;
-}
-.bx-pagination .bx-pagination-container ul li.bx-pag-all a span,
-.bx-pagination .bx-pagination-container ul li.bx-pag-prev a span,
-.bx-pagination .bx-pagination-container ul li.bx-pag-next a span {
-	background: #fff;
-	border: 2px solid #eff0f1;
-	line-height: 28px;
-	padding: 0 18px;
-	color: #444;
-}
-.bx-pagination .bx-pagination-container ul li.bx-pag-all span,
-.bx-pagination .bx-pagination-container ul li.bx-pag-prev span,
-.bx-pagination .bx-pagination-container ul li.bx-pag-next span{
-	color: #aab1b4;
-	background: #fff;
-	border: 2px solid #eff0f1;
-	line-height: 28px;
-	padding: 0 18px;
-}
-.bx-pagination .bx-pagination-container ul li.bx-pag-all a:hover span,
-.bx-pagination .bx-pagination-container ul li.bx-pag-prev a:hover span,
-.bx-pagination .bx-pagination-container ul li.bx-pag-next a:hover span {
-	background: #fff;
-	border-color: #DADADA;
-	color: #000;
+	font-size: 18px;
+	float: left;
 }
 
-/*color schemes*/
-.bx-pagination.bx-green  .bx-pagination-container ul li.bx-active span{
-	background: #3bc915;
+#horizontal-multilevel-menu {
+	margin-top: 10px;
+	border-bottom: 1px solid #4F4F4F;
+	position: relative;
+}
+
+/*Links*/
+#horizontal-multilevel-menu a {
+	display: block;
+	padding: 5px 10px;
+	/*padding:0.3em 0.8em;*/
+	text-decoration: none;
+	text-align: center;
+}
+
+#horizontal-multilevel-menu li {
+	float: left;
+	margin-right: 15px;
+}
+#horizontal-multilevel-menu li:last-of-type{
+	margin-right: 0;
+}
+
+/*Root items*/
+#horizontal-multilevel-menu li a.root-item {
+	color: #4F4F4F;
+	font-weight: bold;
+	padding: 7px 12px;
+}
+
+/*Root menu selected*/
+#horizontal-multilevel-menu li a.root-item-selected {
+	background-color: #2D9CDB;
+	color: #ffffff;
+	font-weight: bold;
+	padding: 7px 12px;
+}
+
+/*Root items: hover*/
+#horizontal-multilevel-menu li:hover a.root-item,
+#horizontal-multilevel-menu li.jshover a.root-item {
 	color: #fff;
 }
-.bx-pagination.bx-yellow  .bx-pagination-container ul li.bx-active span{
-	background: #F9A91D;
+
+/*Item-parents*/
+#horizontal-multilevel-menu a.parent {
+	background: url(images/arrow.gif) center right no-repeat;
+}
+
+/*Denied items*/
+#horizontal-multilevel-menu a.denied {
+	background: url(images/lock.gif) center right no-repeat;
+}
+
+/*Child-items: hover*/
+#horizontal-multilevel-menu li:hover,
+#horizontal-multilevel-menu li.jshover {
+	background: #2D9CDB;
 	color: #fff;
 }
-.bx-pagination.bx-red  .bx-pagination-container ul li.bx-active span{
-	background: #E22B2B;
+
+/*Child-items selected*/
+#horizontal-multilevel-menu li.item-selected {
+	background: #2D9CDB;
 	color: #fff;
 }
-.bx-pagination.bx-blue .bx-pagination-container ul li.bx-active span{
-	background: #0083d1;
+
+/*Sub-menu box*/
+#horizontal-multilevel-menu li ul {
+	position: absolute;
+	top: 35px;
+	left: 0;
+	display: none;
+	z-index: 500;
+	height: auto;
+	width: 100%;
+}
+
+#horizontal-multilevel-menu li ul > li {
+	background-color: #ffffff;
+	display: inline-block;
+	max-width: 240px;
+	border: none;
+	padding: 5px 0;
+	margin-right: 0;
+}
+#horizontal-multilevel-menu li ul > li.category-item{
+	background-color: #ECEDEE;
+	width: 100%;
+	max-width: 100%;
+	height: 101px;
+	padding: 15px 10px 15px 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	border-right: 1px solid #4F4F4F;
+	border-bottom: 1px solid #4F4F4F;
+}
+#horizontal-multilevel-menu li ul > li.category-item:nth-child(4n){
+	border-right: none;
+}
+#horizontal-multilevel-menu li ul > li.category-item:hover{
+	background-color: #2D9CDB;
+}
+#horizontal-multilevel-menu li ul > li.category-item:hover a{
 	color: #fff;
+}
+#horizontal-multilevel-menu li ul > li.category-item:hover .category-anons,
+#horizontal-multilevel-menu li ul > li.category-item:hover .category-name{
+	color: #ffffff!important;
+}
+#horizontal-multilevel-menu li ul > li.category-item a{
+	text-decoration: none;
+	display: block;
+}
+#horizontal-multilevel-menu li ul > li .category-anons{
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 18px;
+	color: #4F4F4F;
+	padding: 0;
+	margin: 0;
+}
+#horizontal-multilevel-menu li ul > li .category-name{
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: #2D9CDB!important;
+	padding: 0!important;
+	margin: 0!important;
+
+}
+
+/*Sub-menu item box*/
+#horizontal-multilevel-menu li li {
+	width: 100%;
+	border-bottom: 1px solid #DEDEDE;
+}
+
+/*Item link*/
+#horizontal-multilevel-menu li ul a {
+	text-align: left;
+}
+
+/*Items text color & size */
+#horizontal-multilevel-menu li a,
+#horizontal-multilevel-menu li:hover li a,
+#horizontal-multilevel-menu li.jshover li a,
+#horizontal-multilevel-menu li:hover li:hover li a,
+#horizontal-multilevel-menu li.jshover li.jshover li a,
+#horizontal-multilevel-menu li:hover li:hover li:hover li a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li a,
+#horizontal-multilevel-menu li:hover li:hover li:hover li:hover li a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover li a,
+#horizontal-multilevel-menu li:hover li:hover li:hover li:hover li:hover li a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover li.jshover li a {
+	color: #4F4F4F;
+}
+
+/*Items text color & size: hover*/
+#horizontal-multilevel-menu li:hover li:hover a,
+#horizontal-multilevel-menu li.jshover li.jshover a,
+#horizontal-multilevel-menu li:hover li:hover li:hover a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover a,
+#horizontal-multilevel-menu li:hover li:hover li:hover li:hover a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover a
+#horizontal-multilevel-menu li:hover li:hover li:hover li:hover li:hover a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover li.jshover a
+#horizontal-multilevel-menu li:hover li:hover li:hover li:hover li:hover li:hover a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover li.jshover li.jshover a {
+	color: #ffffff;
+}
+
+#horizontal-multilevel-menu li ul ul {
+	margin: 0;
+}
+
+#horizontal-multilevel-menu li:hover ul ul,
+#horizontal-multilevel-menu li.jshover ul ul,
+#horizontal-multilevel-menu li:hover ul ul ul,
+#horizontal-multilevel-menu li.jshover ul ul ul,
+#horizontal-multilevel-menu li:hover ul ul ul ul,
+#horizontal-multilevel-menu li.jshover ul ul ul ul,
+#horizontal-multilevel-menu li:hover ul ul ul ul ul,
+#horizontal-multilevel-menu li.jshover ul ul ul ul ul {
+	top: 41px;
+	display: none;
+}
+
+#horizontal-multilevel-menu li:hover ul,
+#horizontal-multilevel-menu li.jshover ul,
+#horizontal-multilevel-menu li li:hover ul,
+#horizontal-multilevel-menu li li.jshover ul,
+#horizontal-multilevel-menu li li li:hover ul,
+#horizontal-multilevel-menu li li li.jshover ul,
+#horizontal-multilevel-menu li li li li:hover ul,
+#horizontal-multilevel-menu li li li li.jshover ul,
+#horizontal-multilevel-menu li li li li li:hover ul,
+#horizontal-multilevel-menu li li li li li.jshover ul {
+	/*z-index:1000;
+	top:auto;*/
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	background-color: #ffffff;
+}
+.list-group{
+	grid-template-columns: minmax(175px, 240px);
+}
+.list-group-inner{
+	padding-bottom: 20px!important;
+	border-bottom: 1px solid #4F4F4F;
+	-webkit-box-shadow: 0 25px 30px -18px #4F4F4F;
+	box-shadow: 0 25px 30px -18px #4F4F4F;
+}
+
+div.menu-clear-left {
+	clear: left;
+}
+
+@media screen  and (max-width: 810px){
+	#horizontal-multilevel-menu li ul > li.category-item{
+		height: 53px;
+	}
+	#horizontal-multilevel-menu li ul > li .category-anons{
+		display: none;
+	}
+	#horizontal-multilevel-menu li:hover ul ul,
+	#horizontal-multilevel-menu li.jshover ul ul,
+	#horizontal-multilevel-menu li:hover ul ul ul,
+	#horizontal-multilevel-menu li.jshover ul ul ul,
+	#horizontal-multilevel-menu li:hover ul ul ul ul,
+	#horizontal-multilevel-menu li.jshover ul ul ul ul,
+	#horizontal-multilevel-menu li:hover ul ul ul ul ul,
+	#horizontal-multilevel-menu li.jshover ul ul ul ul ul {
+		top: 61px;
+		display: none;
+	}
+	#horizontal-multilevel-menu li:hover ul,
+	#horizontal-multilevel-menu li.jshover ul,
+	#horizontal-multilevel-menu li li:hover ul,
+	#horizontal-multilevel-menu li li.jshover ul,
+	#horizontal-multilevel-menu li li li:hover ul,
+	#horizontal-multilevel-menu li li li.jshover ul,
+	#horizontal-multilevel-menu li li li li:hover ul,
+	#horizontal-multilevel-menu li li li li.jshover ul,
+	#horizontal-multilevel-menu li li li li li:hover ul,
+	#horizontal-multilevel-menu li li li li li.jshover ul {
+		/*z-index:1000;
+		top:auto;*/
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.category-item{
+	}
 }
