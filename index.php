@@ -1,48 +1,33 @@
-<? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
-/** @var array $arParams */
-/** @var array $arResult */
-/** @global CMain $APPLICATION */
-/** @global CUser $USER */
-/** @global CDatabase $DB */
-/** @var CBitrixComponentTemplate $this */
-/** @var string $templateName */
-/** @var string $templateFile */
-/** @var string $templateFolder */
-/** @var string $componentPath */
-/** @var CBitrixComponent $component */
-$this->setFrameMode(true);
-?>
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__logo">
+            <img src="/bitrix/templates/alta_group/img/logo.png" alt="">
+        </div>
+        <div class="footer__title">
+            <h5>ALTA GROUP
+                KAZAKHSTAN</h5>
+        </div>
+        <div class="footer__menu">
 
-<div class="main-news__main">
-    <? foreach ($arResult["ITEMS"] as $arItem): ?>
-        <?
-        $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
-        $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
-        ?>
-        <article class="main-news__item" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
-            <a href="<?= $arItem["DETAIL_PAGE_URL"] ?>" class="main-news__img">
-                <img src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>" alt="<?= $arItem["PREVIEW_PICTURE"]["ALT"] ?>"
-                     title="<?= $arItem["PREVIEW_PICTURE"]["TITLE"] ?>">
-                <?if(!empty($arItem['DISPLAY_PROPERTIES']['REGION'])):?>
-                    <div class="main-news__mark"><?=$arItem['DISPLAY_PROPERTIES']['REGION']['VALUE']?></div>
-                <?endif;?>
-            </a>
-            <a class="main-news__link" href="<?= $arItem["DETAIL_PAGE_URL"] ?>">
+        </div>
+        <div class="footer__contacts">
+            <a href="tel:+77172781048"><b>+7 7172 78-10-48</b></a>
+            <a href="tel:+77780101048"><b>+7 778 010-10-48</b></a>
+            <a href="mailto:info@alta-group.kz">info@alta-group.kz</a>
+        </div>
+        <div class="footer__group">
+            <a href="#call" class="footer__btn call popap_box" data-body="call">Заказать звонок</a>
+            <a href="#feedback" class="footer__btn popap_box" data-body="feedback">Отправить запрос</a>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="footer__subtitle">
+            ПРОЕКТИРОВАНИЕ И ПРОИЗВОДСТВО ОЧИСТНЫХ СООРУЖЕНИЙ
+        </div>
+        <div class="footer__adress">
 
-                <h3 class="main-news__name"><? echo $arItem["NAME"] ?></h3>
-                <p class="main-news__anons"><?= $arItem["PREVIEW_TEXT"] ?></p>
-                <?if(!empty($arItem['DISPLAY_PROPERTIES']['PERFOMACE']['VALUE'])):?>
-                <div class="main-news__perfomace">
-                    Производительность<br>
-                    <b><?=$arItem['DISPLAY_PROPERTIES']['PERFOMACE']['VALUE']?></b>
-                </div>
-                <?endif;?>
-            </a>
-        </article>
 
-    <? endforeach; ?>
-</div>
-<? if ($arParams["DISPLAY_BOTTOM_PAGER"]): ?>
-    <br/><?= $arResult["NAV_STRING"] ?>
-<? endif; ?>
+        </div>
+    </div>
 
+</footer>

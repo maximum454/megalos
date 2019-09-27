@@ -29,19 +29,55 @@
         </div>
     </header>
     <nav class="nav">
-        <ul id="horizontal-multilevel-menu" class="nav__menu">
-            <li><a href="/equipment/" class="root-item-selected">Оборудование</a>
-                <ul>
-                    <li class="item-selected"><a href="/equipment/prom/">ЖКХ и промышленность</a></li>
-                    <li><a href="/equipment/home/">Частное домостроение</a></li>
+        <ul class="menu">
+            <li class="menu__item"><a href="#">Settings</a>
+                <ul class="menu__list">
+                    <li class="menu__list-item"><a href="#">ЖКХ и промышленность</a>
+                        <ul class="menu__group">
+                            <li>
+                                <a href="#">
+                                    <div class="menu__categoty">Очистные сооружения
+                                        хозяйственно-бытовых
+                                        и промышленных стоков</div>
+                                    <div class="menu__name">Alta Air Master</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="menu__categoty">Очистные сооружения
+                                        хозяйственно-бытовых
+                                        и промышленных стоков</div>
+                                    <div class="menu__name">Alta Air Master</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="menu__categoty">Очистные сооружения
+                                        хозяйственно-бытовых
+                                        и промышленных стоков</div>
+                                    <div class="menu__name">Alta Air Master</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="menu__categoty">Очистные сооружения
+                                        хозяйственно-бытовых
+                                        и промышленных стоков</div>
+                                    <div class="menu__name">Alta Air Master</div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="menu__list-item"><a href="#">Частное домостроение</a></li>
                 </ul>
             </li>
-            <li><a href="/documentation/" class="root-item">Документация</a></li>
-            <li><a href="/projects/" class="root-item">Проекты</a></li>
-            <li><a href="/news/" class="root-item">Новости</a></li>
-            <li><a href="/about/" class="root-item">О компании</a></li>
-            <li><a href="/contacts/" class="root-item">Контакты</a></li>
+            <li class="menu__item"><a href="#">Home</a></li>
+            <li class="menu__item"><a href="#">Executive Summary</a></li>
+            <li class="menu__item"><a href="#"> Visual Analytics</a></li>
+
         </ul>
+        <a class="nav__search" href="#"></a>
     </nav>
     <main>
         <section class="slider js-slider">
@@ -182,9 +218,11 @@
             <div class="main-equipment__category">
                 <div>
                     <h3 class="access">Для частного дома</h3>
-                    <p>— Загородные дома</p>
-                    <p>— Коттеджи</p>
-                    <p>— Дачи</p>
+                    <div class="each-category">
+                        <p data-id="30,32,36">— Загородные дома</p>
+                        <p>— Коттеджи</p>
+                        <p>— Дачи</p>
+                    </div>
                 </div>
                 <div>
                     <h3 class="primary">Для городов и поселков</h3>
@@ -201,21 +239,21 @@
                     <p>— Мясокомбинаты</p>
                 </div>
             </div>
-
+            <div class="main-equipment__main">
             <ul class="main-equipment__select">
-                <li class="main-equipment__item">
+                <li class="main-equipment__item" data-elem="32">
                     <p class="main-equipment__anons">Очистные сооружения
                         хозяйственно-бытовых
                         и промышленных стоков</p>
                     <h4 class="main-equipment__name">Alta Air Master</h4>
                 </li>
-                <li class="main-equipment__item">
+                <li class="main-equipment__item" data-elem="50">
                     <p class="main-equipment__anons">Очистные сооружения
                         поверхностных стоков
                         / ливневых, дождевых /</p>
                     <h4 class="main-equipment__name">Alta Air Master</h4>
                 </li>
-                <li class="main-equipment__item">
+                <li class="main-equipment__item" data-elem="36">
                     <p class="main-equipment__anons">Установки
                         обеззараживания сточных
                         вод ультрафиолетом</p>
@@ -294,6 +332,7 @@
                         и химической очистки бытовых и производственных сточных вод</p>
                 </div>
             </ul>
+            </div>
         </section>
 
         <section class="main-news">

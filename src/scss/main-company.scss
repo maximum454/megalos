@@ -1,12 +1,12 @@
 .main-company{
-	margin-bottom: 40px;
+	margin-bottom: 21px;
 	&__header{
 		margin-bottom: 25px;
 	}
 	&__title{
 		font-weight: bold;
-		font-size: 24px;
-		line-height: 24px;
+		font-size: 34px;
+		line-height: 1;
 		text-align: center;
 		color: #4A4A4A;
 		position: relative;
@@ -36,11 +36,12 @@
 	&__main{
 		display: flex;
 		justify-content: space-between;
-		margin-bottom: 20px;
+		margin-bottom: 23px;
 	}
 	&__item{
-		padding: 20px 40px 0;
+		padding: 20px 38px 0;
 		border-right: 1px solid #4F4F4F;
+		text-align: center;
 		&:last-of-type{
 			border-right:  none;
 		}
@@ -49,12 +50,13 @@
 		height: 50px;
 		display: block;
 		text-decoration: none;
-		margin-bottom: 16px;
+		margin-bottom: 7px;
 		position: relative;
 		img{
 			height: 100%;
 			display: block;
 			object-fit: cover;
+			margin: 0 auto;
 		}
 	}
 	&__mark{
@@ -85,6 +87,7 @@
 		margin: 0;
 	}
 	&__footer{
+		padding: 0 20px;
 		p{
 			max-width: 692px;
 			font-size: 15px;
@@ -105,46 +108,80 @@
 		text-align: center;
 		color: #4F4F4F;
 		text-decoration: none;
+		cursor: pointer;
+	}
+	&__down{
+		max-width: 692px;
+		font-size: 15px;
+		line-height: 20px;
+		color: #4A4A4A;
+		margin: 24px auto;
+		display: none;
+		text-align: center;
+		&.active{
+			display: block;
+		}
 	}
 	@include r(960){
 		&__item{
 			padding: 20px 20px 0;
 		}
 	}
-	@include r(820){
+	@include r(768){
 		&__main{
-			display: flex;
-			justify-content: space-between;
-			flex-wrap: wrap;
-			margin-bottom: 20px;
+			flex-direction: column;
 		}
 		&__item{
-			padding: 20px 20px 0;
-			width: 50%;
-			&:last-of-type{
-				border-right: 1px solid #4F4F4F;
-			}
-			&:nth-child(2n){
-				border-right: none;
-			}
-		}
-	}
-	@include r(415){
-		&__item{
-			padding: 20px 20px 0;
-			width: 100%;
-			border: none;
+			padding: 20px;
+			margin: 0 20px;
+			border-right: 0;
+			border-bottom: 1px solid #4F4F4F;
 			display: flex;
-			max-width: 300px;
-			margin: 0 auto;
-			&:last-of-type{
-				border-right: none;
-			}
+			align-items: center;
+			justify-content: center;
 		}
 		&__img{
-			width: 80px;
+			width: 90px;
 			flex-shrink: 0;
-			margin-right: 10px;
+			margin-right: 38px;
+		}
+		&__link{
+			max-width: 120px;
+			text-align: left;
 		}
 	}
+	@include r(480){
+		&__title{
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 1;
+			text-align: center;
+			color: #4A4A4A;
+			position: relative;
+			overflow: hidden;
+			margin: 0;
+			&:before{
+				content: '';
+				display: inline-block;
+				position: relative;
+				width: 100%;
+				height: 1px;
+				right: 10px;
+				margin-left: -100%;
+				border-bottom: 1px solid #4F4F4F;
+			}
+			&:after{
+				content: '';
+				display: inline-block;
+				position: relative;
+				width: 100%;
+				height: 1px;
+				left: 10px;
+				margin-right: -98%;
+				border-bottom: 1px solid #4F4F4F;
+			}
+		}
+	}
+
+
 }

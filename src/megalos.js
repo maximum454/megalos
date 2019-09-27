@@ -1,8 +1,10 @@
 import './megalos.scss'
+import './js/ion.rangeSlider'
 import './js/jquery.arcticmodal-0.3.min'
 import './js/slick.min'
-import './js/ion.rangeSlider'
 import './js/lightbox'
+import './js/lightgallery'
+import './js/lightgallery-all'
 
 
 import './img/logo.png'
@@ -13,89 +15,126 @@ import './img/main-company-2.svg'
 import './img/main-company-3.svg'
 import './img/main-company-4.svg'
 import './img/main-company-5.svg'
-import './img/slider-img.jpg'
+import './img/slider-1.png'
 import './img/alta-m.png'
-import './img/Air-Master.png'
+import './img/detail-img.png'
+import './img/shema.png'
 
-
-$('.js-slider').slick({
-    arrows: false,
-    dots: true,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear'
+$('a[href^="#"]').click(function(){
+    var target = $(this).attr('href');
+    $('html, body').animate({scrollTop: $(target).offset().top}, 1000);
+    return false;
 });
 
-$('.js-slider-detail').slick({
-    arrows: false,
-    dots: true,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear'
-});
+$(".lightgallery").lightGallery();
 
 /*Скрипт для модальных окон*/
 $('.popap_box').click(function () {
-    $('#modalbox_' + $(this).data('body')).arcticmodal();
+    $('#modalbox_' + $(this).data('body')).arcticmodal({
+        afterClose: function(){
+            $('body').css('overflow','scroll');
+        }
+    });
 });
+
+$('.js-down').on('click', function () {
+    $('.main-company__down').toggleClass("active");
+});
+
+$('.js-slider').not('.slick-initialized').slick({
+    arrows: false,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 6000
+});
+
+
 
 $(".js-range-slider").ionRangeSlider({
     skin: "modern",
-    postfix: " м3",
-    step: 1,
+    step: 0,
     from: 0,
     grid: true,
     gridMargin: 17,
     onStart: function (data) {
-        var key = $('.js-range-slider').data('link');
-        var re = /\s*,\s*/
+        var key = $('.js-range-slider').data('key');
+        var re = /\s*,\s*/;
         var tagList = key.split(re);
         $('.js-rec').on('click', function () {
-            $('.filter__img').removeClass('hidden').attr("href", tagList[data.from]).children('img').attr("src", tagList[data.from])
+            $('.properties').addClass('hidden');
+            $('.filter').find('#' + tagList[data.from]).removeClass('hidden');
         });
     },
     onChange: function (data) {
-        var key = $('.js-range-slider').data('link');
-        var re = /\s*,\s*/
+        var key = $('.js-range-slider').data('key');
+        var re = /\s*,\s*/;
         var tagList = key.split(re);
         $('.js-rec').on('click', function () {
-            $('.filter__img').removeClass('hidden').attr("href", tagList[data.from]).children('img').attr("src", tagList[data.from])
+            $('.properties').addClass('hidden');
+            $('.filter').find('#' + tagList[data.from]).removeClass('hidden');
         });
 
 
     },
-    onFinish: function (data) {
-        // fired on pointer release
-    },
-    onUpdate: function (data) {
-        // fired on changing slider with Update method
-    }
 });
-let my_range = $(".js-range-slider").data("ionRangeSlider");
+$(".js-range-slider-2").ionRangeSlider({
+    skin: "modern",
+    step: 0,
+    from: 0,
+    grid: true,
+    gridMargin: 17,
+    onStart: function (data) {
+        var key = $('.js-range-slider').data('key');
+        var re = /\s*,\s*/;
+        var tagList = key.split(re);
+        $('.js-rec').on('click', function () {
+            $('.properties').addClass('hidden');
+            $('.filter').find('#' + tagList[data.from]).removeClass('hidden');
+        });
+    },
+    onChange: function (data) {
+        var key = $('.js-range-slider').data('key');
+        var re = /\s*,\s*/;
+        var tagList = key.split(re);
+        $('.js-rec').on('click', function () {
+            $('.properties').addClass('hidden');
+            $('.filter').find('#' + tagList[data.from]).removeClass('hidden');
+        });
+
+
+    },
+});
+/*let my_range = $(".js-range-slider").data("ionRangeSlider");
 
 $('.js-specifications').on('click', function () {
-    var val, calc, perfomace, count;
+    var val, calc, perfomace, count, num;
     val = $('#human').val();
     calc = (val * 150) / 1000;
     $('#capacity').val(calc);
-    $('.filter__specifications').each(function (i, elem) {
-        $(elem).addClass('hidden');
+    $('.properties').addClass('hidden');
+
+    $('.properties').each(function (i, elem) {
+        $(this).addClass('hidden');
         perfomace = $(this).data('perfomace');
         count = perfomace;
         if (calc <= count) {
-            $(elem).addClass('select');
-            $('.select:first').removeClass('hidden');
-            perfomace = $('.select:first').data('perfomace');
+            $(elem).removeClass('hidden');
+            perfomace = $(elem).data('perfomace');
+            num = $(elem).data('num');
             my_range.update({
+                from: num
             });
+            return false;
 
-        } else if(calc > count) {
+        } else {
             console.log("позвоните менеджеру");
         }
-
     });
-});
-
+});*/
 

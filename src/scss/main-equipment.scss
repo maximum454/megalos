@@ -38,7 +38,46 @@
 		display: flex;
 		justify-content: space-between;
 		padding: 0 40px;
-		margin-bottom: 24px;
+		margin: 0 0 24px;
+		list-style: none;
+		li{
+			margin: 0;
+			padding: 0;
+			position: relative;
+			&:nth-child(1){
+				&:before{
+					content: '';
+					position: relative;
+					display: inline-block;
+					background-color: #25AE6A;
+					width: 12px;
+					height: 12px;
+					margin: 0 5px;
+				}
+			}
+			&:nth-child(2){
+				&:before{
+					content: '';
+					position: relative;
+					display: inline-block;
+					background-color: #2D9CDB;
+					width: 12px;
+					height: 12px;
+					margin: 0 5px;
+				}
+			}
+			&:nth-child(3){
+				&:before{
+					content: '';
+					position: relative;
+					display: inline-block;
+					background-color: #DB2D57;
+					width: 12px;
+					height: 12px;
+					margin: 0 5px;
+				}
+			}
+		}
 		h3{
 			display: inline-block;
 			font-weight: bold;
@@ -55,53 +94,20 @@
 			color: #4A4A4A;
 			margin: 0;
 		}
-		.access{
-			position: relative;
-			&:before{
-				content: '';
-				position: relative;
-				display: inline-block;
-				background-color: #25AE6A;
-				width: 12px;
-				height: 12px;
-				margin: 0 5px;
-			}
-		}
-		.primary{
-			position: relative;
-			&:before{
-				content: '';
-				position: relative;
-				display: inline-block;
-				background-color: #2D9CDB;
-				width: 12px;
-				height: 12px;
-				margin: 0 5px;
-			}
-		}
-		.warning{
-			position: relative;
-			&:before{
-				content: '';
-				position: relative;
-				display: inline-block;
-				background-color: #DB2D57;
-				width: 12px;
-				height: 12px;
-				margin: 0 5px;
-			}
-		}
 	}
 	&__select{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__main{
 		background-image: url("img/main-equipment-bg.jpg");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 		padding: 20px;
-		margin: 0;
-		list-style: none;
-		display: flex;
-		flex-wrap: wrap;
 	}
 	&__item{
 		width: 100%;
@@ -113,10 +119,11 @@
 		align-items: flex-start;
 		justify-content: flex-end;
 		border: 1px solid #ffffff;
+		margin-left: -1px;
+		margin-bottom: -1px;
 		&.dop{
 			max-width: 33%;
 			height: 51px;
-			margin-top: -1px;
 			background-image: url("img/plus-white.svg");
 			background-size: 11px;
 			background-position: 4px 4px;
@@ -155,6 +162,7 @@
 	}
 	&__logo{
 		width: 195px;
+		margin-top: 6px;
 		h5{
 			font-weight: bold;
 			font-size: 36px;

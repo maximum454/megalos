@@ -1,22 +1,32 @@
 .footer{
-	display: grid;
-	grid-template-columns: 100px 200px  minmax( 206px,340px) 1fr;
-	grid-template-areas: "logo title contacts group";
 	background-color: #2D9CDB;
+	&__inner{
+		display: grid;
+		grid-template-columns: 101px minmax( 189px,240px) 240px  minmax( 129px,170px) minmax( 208px,227px);
+		grid-template-areas: "logo title menu contacts group" "bottom bottom bottom bottom bottom";
+		border-bottom: 1px solid #fff;
+	}
 	&__logo{
+		grid-area: logo;
 		border-right: 1px solid #fff;
 		text-align: center;
-		padding-top: 7px;
+		img{
+			display: block;
+			max-width: 100%;
+			margin: 0 auto;
+		}
 	}
 	&__title{
-		padding: 20px;
+		padding:13px 20px;
 		border-right: 1px solid #fff;
+		grid-area: title;
 		h5{
+			font-style: normal;
 			font-weight: bold;
-			font-size: 18px;
-			line-height: 20px;
+			font-size: 24px;
+			line-height: 30px;
 			color: #FFFFFF;
-			margin: 0 0 22px;
+			margin: 0;
 		}
 		p{
 			font-size: 12px;
@@ -28,8 +38,9 @@
 		}
 	}
 	&__menu{
-		padding: 20px;
+		padding: 13px 19px;
 		border-right: 1px solid #fff;
+		grid-area: menu;
 	}
 	&__list{
 		margin: 0;
@@ -39,19 +50,12 @@
 	&__item{
 
 	}
-	&__link{
+	&__link {
 		font-weight: bold;
-		font-size: 14px;
-		line-height: 20px;
+		font-size: 16px;
+		line-height: 25px;
 		color: #FFFFFF;
 		text-decoration: none;
-	}
-	&__box{
-		display: grid;
-		grid-template-columns: minmax(135px , 160px)  180px;
-		grid-template-rows: 90px;
-		grid-template-areas: "contacts group"
-								"adress adress";
 	}
 	&__contacts{
 		grid-area: contacts;
@@ -61,27 +65,52 @@
 		flex-direction: column;
 		border-right: 1px solid #fff;
 		a{
-			font-size: 14px;
-			line-height: 20px;
+			font-size: 16px;
+			line-height: 26px;
 			text-align: right;
 			color: #ffffff;
 			text-decoration: none;
+			&:last-child{
+				font-size: 14px;
+			}
 		}
 	}
 	&__group{
 		grid-area: group;
 	}
+	&__bottom{
+		padding: 17px 17px 17px 23px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		color: #ffffff;
+	}
+	&__subtitle{
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+	&__adress{
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: #FFFFFF;
+	}
 	&__btn{
 		display: block;
-		font-size: 13px;
-		line-height: 45px;
+		font-size: 16px;
+		line-height: 50px;
 		color: #ffffff;
 		text-decoration: none;
-		height: 45px;
+		height: 50%;
 		padding-left: 15px;
 		padding-right: 45px;
 		border-bottom: 1px solid #ffffff;
 		position: relative;
+		cursor: pointer;
 		&:after{
 			content: '';
 			position: absolute;
@@ -92,7 +121,7 @@
 			background-size: 22px 13px;
 			background-position: center;
 			background-repeat: no-repeat;
-			width: 42px;
+			width: 50px;
 			height: 100%;
 			border-left: 1px solid #ffffff;
 		}
@@ -103,6 +132,7 @@
 			opacity: .7;
 		}
 		&.call{
+			background-color: #DB2D6C;
 			&:after{
 				background-color: #DB2D6C;
 				background-image: url("img/header-IconPhone.svg");
@@ -110,76 +140,65 @@
 			}
 		}
 	}
-	&__adress{
-		grid-area: adress;
-		padding: 20px;
-		font-size: 14px;
-		line-height: 20px;
-		color: #FFFFFF;
-		border-top: 1px solid #ffffff;
-	}
-	@include r(823){
-		grid-template-columns: 100px 200px 206px 1fr;
-		&__box{
-			grid-template-columns: minmax(100px, 290px);
-			grid-template-areas: "adress adress"
-			"contacts contacts";
+	@include r(880){
+		&__inner{
+			display: grid;
+			grid-template-columns: 101px minmax( 189px,240px) 240px  minmax( 160px,1fr);
+			grid-template-areas: "logo title menu contacts" "bottom bottom bottom bottom";
+			border-bottom: 1px solid #fff;
 		}
 		&__group{
 			display: none;
 		}
 		&__contacts{
-			align-items: flex-start;
 			padding: 0 20px;
 			border-right: none;
+			a{
+				text-align: center;
+			}
 		}
 	}
-	@include r(680){
-		grid-template-columns: 206px 1fr;
-		grid-template-areas: "logo title" "group contacts";
-	}
-	@include r(460){
-		grid-template-columns: 1fr;
-		grid-template-areas: "logo" "title" "contacts";
-		text-align: center;
-		&__contacts{
-			align-items: center;
-			padding: 20px;
-			a{
-				font-size: 12px;
-			}
+	@include r(689){
+		&__inner{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-areas: "logo" "title" "menu" "contacts";
+			border-bottom: 1px solid #fff;
+		}
+		&__logo{
+			max-width: 100px;
+			border: none;
+			margin: 0 auto;
 		}
 		&__title{
-			padding: 20px;
-			border-right: 1px solid #fff;
-			h5{
-				margin: 0 0 5px;
-			}
-			p{
-				font-size: 10px;
-			}
+			text-decoration: none;
+			text-align: center;
 		}
 		&__menu{
-			padding: 0 0 20px;
-		}
-		&__adress{
-			max-width: 200px;
+			padding: 13px 19px;
+			border-right:none;
+			max-width: 240px;
 			margin: 0 auto;
-			font-size: 12px;
+			text-align: center;
 		}
-		&__item{
-			padding: 10px;
-			border-bottom: 1px solid #ffffff;
-			&:nth-child(1){
-				max-width: 240px;
-				margin: 0 auto 10px;
-				border: 1px solid #ffffff;
+		&__group{
+			display: none;
+		}
+		&__contacts{
+			padding: 0 20px;
+			margin-bottom: 20px;
+			border-right: none;
+			a{
+				text-align: center;
 			}
-			&:nth-child(2){
-				max-width: 240px;
-				margin: 0 auto 30px;
-				border: 1px solid #ffffff;
-			}
+		}
+		&__bottom{
+			text-align: center;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		&__subtitle{
+			margin-bottom: 10px;
 		}
 	}
 }

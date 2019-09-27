@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900&display=swap&subset=cyrillic');
-@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&display=swap&subset=cyrillic');
+/*@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&display=swap&subset=cyrillic');*/
 
 //patrial
+@import "scss/patrial/ion.rangeSlider.css";
 @import "scss/patrial/slick";
 @import "scss/patrial/slick-theme";
 @import "scss/patrial/jquery.arcticmodal-0.3";
-@import "scss/patrial/ion.rangeSlider";
+
 @import "scss/patrial/lightbox";
+@import "scss/patrial/lightgallery";
 
 //base
 @import "scss/base/mixin";
@@ -14,21 +16,11 @@
 
 //megalos
 @import "scss/header";
-@import "scss/nav";
 @import "scss/slider";
-@import "scss/slider-equipment";
-@import "scss/zhkkh";
-@import "scss/main";
 @import "scss/main-company";
 @import "scss/main-equipment";
-@import "scss/main-products";
-@import "scss/main-news";
 @import "scss/footer";
 @import "scss/detail";
-@import "scss/optional";
-@import "scss/contacts";
-@import "scss/about";
 @import "scss/form";
 @import "scss/filter";
-@import "scss/bx-breadcrumb";
-@import "scss/news-detail";
+@import "scss/foto";
