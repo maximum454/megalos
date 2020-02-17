@@ -3,9 +3,9 @@
 	padding: 20px 50px;
 	margin-bottom: 50px;
 	display: grid;
-	grid-template-columns: 320px 1fr;
+	grid-template-columns: 340px 1fr;
 	grid-template-rows: auto;
-	grid-column-gap: 80px;
+	grid-column-gap: 60px;
 	grid-template-areas: "filter contant";
 	&__aside{
 		grid-area: aside;

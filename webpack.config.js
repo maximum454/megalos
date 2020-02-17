@@ -33,7 +33,7 @@ module.exports = {
     optimization: {
         minimizer: [
             // we specify a custom UglifyJsPlugin here to get source maps in production
-            new UglifyJsPlugin({
+            /*new UglifyJsPlugin({
                 cache: true,
                 parallel: true,
                 uglifyOptions: {
@@ -42,6 +42,20 @@ module.exports = {
                     mangle: true
                 },
                 sourceMap: true
+            }),*/
+            new UglifyJsPlugin({
+                uglifyOptions: {
+                    compress: {
+                        unsafe: true,
+                        inline: true,
+                        passes: 2,
+                        keep_fargs: false,
+                    },
+                    output: {
+                        beautify: false,
+                    },
+                    mangle: true,
+                },
             })
         ]
     },

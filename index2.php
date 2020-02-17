@@ -15,6 +15,8 @@ $this->setFrameMode(true);
 
 <? $arPerfomace = array(); ?>
 <? $arPerfomace_2 = array(); ?>
+<? $arPerfomace_3 = array(); ?>
+<div style="display: none;" class="111">
 <? foreach ($arResult["ITEMS"] as $arItem): ?>
     <?
     $arId[] = $arItem["ID"];
@@ -23,38 +25,56 @@ $this->setFrameMode(true);
     }
     if (!empty($arItem["DISPLAY_PROPERTIES"]["PERFOMACE_2"]["VALUE"])) {
         $arPerfomace_2[] = $arItem["DISPLAY_PROPERTIES"]["PERFOMACE_2"]["VALUE"];
+        $arPerfomace_3[$arItem["ID"]] = $arItem["DISPLAY_PROPERTIES"]["PERFOMACE_2"]["VALUE"];
+
     }
     ?>
+    <?
+    echo "<pre>";
+    print_r($arPerfomace_3);
+    echo "</pre>";
+    ?>
 <? endforeach; ?>
+</div>
+
 
 <?
+asort($arPerfomace_3);
 $id = implode(",", $arId);
 $values = implode(",", $arPerfomace);
-$values2 = implode(",", $arPerfomace_2);
-
+$values2 = implode(",", $arPerfomace_3);
 ?>
+<div style="display: none;">
+<? foreach ($arPerfomace_3 as $key => $arItem): ?>
+    <?$arId2[] = $key;?>
+    <?
+echo "<pre>";
+print_r($arPerfomace_2);
+echo "</pre>";
+    ?>
+<? endforeach; ?>
+</div>
+<?
+$id2 = implode(",", $arId2);
+?>
+
+
 
 
 <div class="filter__slider">
     <div class="primary">
-        <input type="text" class="js-range-slider" value=""
-               data-values="<?= $values ?>"
-               data-key="<?= $id ?>"
-               data-postfix="м³"
-        >
+        <div class="filter__metr">м³ в сутки</div>
+        <input type="text" class="js-range-slider" value="" data-values="<?= $values ?>" data-key="<?= $id ?>">
     </div>
     <div class="filter__or">или</div>
     <div class="secondary">
-        <input type="text" class="js-range-slider-2" value=""
-               data-values="<?= $values2 ?>"
-               data-key="<?= $id ?>"
-            <?if($arItem["IBLOCK_ID"] === 11):?>
-                data-postfix="л/с"
-            <?else:?>
-                data-postfix="ч"
-            <?endif;?>
+        <?if($arItem["IBLOCK_ID"] == 11):?>
+            <div class="filter__metr">литров в секунду</div>
+        <?else:?>
+            <div class="filter__metr">количество жильцов</div>
+        <?endif;?>
 
-        >
+        <input type="text" class="js-range-slider-2" value="" data-values="<?= $values2 ?>" data-key2="<?= $id2 ?>">
     </div>
 </div>
 
@@ -66,6 +86,13 @@ $values2 = implode(",", $arPerfomace_2);
              data-perfomace="<?= $arItem["DISPLAY_PROPERTIES"]["PERFOMACE"]["VALUE"] ?>">
             <h6 class="filter__subtitle">Вам подходит</h6>
             <div class="filter__name"><?= $arItem["NAME"] ?></div>
+            <? if (!empty($arItem["DETAIL_PICTURE"])): ?>
+                <div class="lightgallery">
+                    <a href="<?= $arItem["DETAIL_PICTURE"]["SRC"] ?>" class="filter__img">
+                        <img src="<?= $arItem["DETAIL_PICTURE"]["SRC"] ?>" alt="<?= $arItem["NAME"] ?>">
+                    </a>
+                </div>
+            <? endif; ?>
             <? if (!empty($arItem["DISPLAY_PROPERTIES"]["SPECIFICAL"])): ?>
                 <ul class="sp">
                     <? foreach ($arItem["DISPLAY_PROPERTIES"]["SPECIFICAL"]["VALUE"] as $k => $value): ?>
@@ -80,13 +107,6 @@ $values2 = implode(",", $arPerfomace_2);
                 <div class="lightgallery">
                     <a href="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>" class="filter__img">
                         <img src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>" alt="Схема <?= $arItem["NAME"] ?>">
-                    </a>
-                </div>
-            <? endif; ?>
-            <? if (!empty($arItem["DETAIL_PICTURE"])): ?>
-                <div class="lightgallery">
-                    <a href="<?= $arItem["DETAIL_PICTURE"]["SRC"] ?>" class="filter__img">
-                        <img src="<?= $arItem["DETAIL_PICTURE"]["SRC"] ?>" alt="<?= $arItem["NAME"] ?>">
                     </a>
                 </div>
             <? endif; ?>

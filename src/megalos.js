@@ -28,7 +28,6 @@ $('a[href^="#"]').click(function(){
 
 $(".lightgallery").lightGallery();
 
-/*Скрипт для модальных окон*/
 $('.popap_box').click(function () {
     $('#modalbox_' + $(this).data('body')).arcticmodal({
         afterClose: function(){
@@ -90,7 +89,7 @@ $(".js-range-slider-2").ionRangeSlider({
     grid: true,
     gridMargin: 17,
     onStart: function (data) {
-        var key = $('.js-range-slider').data('key');
+        var key = $('.js-range-slider-2').data('key2');
         var re = /\s*,\s*/;
         var tagList = key.split(re);
         $('.js-rec').on('click', function () {
@@ -99,42 +98,16 @@ $(".js-range-slider-2").ionRangeSlider({
         });
     },
     onChange: function (data) {
-        var key = $('.js-range-slider').data('key');
+        var key = $('.js-range-slider-2').data('key2');
         var re = /\s*,\s*/;
         var tagList = key.split(re);
         $('.js-rec').on('click', function () {
             $('.properties').addClass('hidden');
             $('.filter').find('#' + tagList[data.from]).removeClass('hidden');
+            console.log(data.from);
         });
 
 
     },
 });
-/*let my_range = $(".js-range-slider").data("ionRangeSlider");
-
-$('.js-specifications').on('click', function () {
-    var val, calc, perfomace, count, num;
-    val = $('#human').val();
-    calc = (val * 150) / 1000;
-    $('#capacity').val(calc);
-    $('.properties').addClass('hidden');
-
-    $('.properties').each(function (i, elem) {
-        $(this).addClass('hidden');
-        perfomace = $(this).data('perfomace');
-        count = perfomace;
-        if (calc <= count) {
-            $(elem).removeClass('hidden');
-            perfomace = $(elem).data('perfomace');
-            num = $(elem).data('num');
-            my_range.update({
-                from: num
-            });
-            return false;
-
-        } else {
-            console.log("позвоните менеджеру");
-        }
-    });
-});*/
 

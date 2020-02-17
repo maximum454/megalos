@@ -2,60 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49d79aed-a6af-4ddc-8739-f140b17f1b64" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/index2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/lg.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/lg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/lg.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/lg.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/detail-img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/lupa.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/shema.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/slider-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/lightgallery-all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/lightgallery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/foto.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/patrial/ion.rangeSlider_old.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/patrial/lightgallery.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/IconFilter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/IconFilter.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/megalos.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/megalos.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/megalos.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/megalos.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/megalos.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/megalos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/megalos.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/megalos.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/equipment.html" beforeDir="false" afterPath="$PROJECT_DIR$/equipment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index2.php" beforeDir="false" afterPath="$PROJECT_DIR$/index2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/Air-Master.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/IconFilter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/IconFilter.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/arrow-right-light.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/plus-green.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/slider-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/megalos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/megalos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/megalos.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/megalos.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/about.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/bx-breadcrumb.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/contacts.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/detail.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/detail.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/filter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/filter.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/main-company.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main-company.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/main-equipment.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main-equipment.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/main-news.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/main-products.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/menuH.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/nav.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/news-detail.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/optional.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/patrial/ion.rangeSlider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/patrial/ion.rangeSlider.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/slider-equipment.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/slider.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/zhkkh.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,25 +25,65 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/megalos.js">
+        <entry file="file://$PROJECT_DIR$/src/scss/filter.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+            <state relative-caret-position="375">
+              <caret line="192" column="17" selection-start-line="192" selection-start-column="17" selection-end-line="192" selection-end-column="17" />
               <folding>
-                <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#35#135#0" />
+                <element signature="e#144#202#0" />
+                <element signature="e#215#505#0" />
+                <element signature="e#370#502#0" />
+                <element signature="e#520#670#0" />
+                <element signature="e#680#781#0" />
+                <element signature="e#790#1012#0" />
+                <element signature="e#980#1009#0" />
+                <element signature="e#1022#1169#0" />
+                <element signature="e#1179#1328#0" />
+                <element signature="e#1340#1443#0" />
+                <element signature="e#1452#1558#0" />
+                <element signature="e#1569#1596#0" />
+                <element signature="e#1604#2277#0" />
+                <element signature="e#1928#2175#0" />
+                <element signature="e#2184#2274#0" />
+                <element signature="e#2245#2270#0" />
+                <element signature="e#2285#2681#0" />
+                <element signature="e#2379#2628#0" />
+                <element signature="e#2634#2678#0" />
+                <element signature="e#2690#2711#0" />
+                <element signature="e#2718#3238#0" />
+                <element signature="e#2870#3048#0" />
+                <element signature="e#3058#3235#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index2.php">
+        <entry file="file://$PROJECT_DIR$/src/scss/detail.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="91" column="24" lean-forward="true" selection-end-line="95" selection-end-column="6" />
+            <state relative-caret-position="105">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#!!top" />
+                <element signature="e#224#249#0" />
+                <element signature="e#261#1825#0" />
+                <element signature="e#289#438#0" />
+                <element signature="e#443#592#0" />
+                <element signature="e#596#686#0" />
+                <element signature="e#691#1791#0" />
+                <element signature="e#752#947#0" />
+                <element signature="e#760#942#0" />
+                <element signature="e#851#936#0" />
+                <element signature="e#955#1550#0" />
+                <element signature="e#964#1545#0" />
+                <element signature="e#1157#1186#0" />
+                <element signature="e#1200#1329#0" />
+                <element signature="e#1340#1433#0" />
+                <element signature="e#1446#1539#0" />
+                <element signature="e#1562#1570#0" />
+                <element signature="e#1576#1787#0" />
+                <element signature="e#1702#1782#0" />
+                <element signature="e#1797#1822#0" />
               </folding>
             </state>
           </provider>
@@ -177,24 +176,25 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/index2.html" />
         <option value="$PROJECT_DIR$/src/scss/patrial/lightgallery.css" />
-        <option value="$PROJECT_DIR$/src/scss/filter.scss" />
-        <option value="$PROJECT_DIR$/src/scss/detail.scss" />
         <option value="$PROJECT_DIR$/src/scss/foto.scss" />
         <option value="$PROJECT_DIR$/src/megalos.scss" />
         <option value="$PROJECT_DIR$/src/scss/slider.scss" />
         <option value="$PROJECT_DIR$/src/scss/main-company.scss" />
         <option value="$PROJECT_DIR$/src/scss/header.scss" />
         <option value="$PROJECT_DIR$/src/scss/footer.scss" />
+        <option value="$PROJECT_DIR$/src/scss/filter.scss" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/src/megalos.js" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/index2.php" />
+        <option value="$PROJECT_DIR$/src/megalos.js" />
+        <option value="$PROJECT_DIR$/src/scss/detail.scss" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="823" />
+    <option name="height" value="821" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -202,11 +202,33 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="megalos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="megalos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="megalos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="megalos" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="megalos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="megalos" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -235,9 +257,10 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="823" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="821" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19027181" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21459228" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -297,16 +320,10 @@
     <MESSAGE value="адаптация" />
     <MESSAGE value="filter" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="Полный редизайн сайта" />
+    <option name="LAST_COMMIT_MESSAGE" value="Полный редизайн сайта" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/scss/base/_class.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/img/search.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -328,11 +345,6 @@
     <entry file="file://$PROJECT_DIR$/src/scss/nav.scss" />
     <entry file="file://$PROJECT_DIR$/src/scss/slider-equipment.scss" />
     <entry file="file://$PROJECT_DIR$/src/scss/main-products.scss" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-351" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/equipment.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -474,18 +486,6 @@
     <entry file="file://$PROJECT_DIR$/src/img/detail-img.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/megalos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225260">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/lightgallery-all.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -613,125 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/filter.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="380" column="19" selection-start-line="380" selection-start-column="19" selection-end-line="380" selection-end-column="19" />
-          <folding>
-            <element signature="e#35#135#0" />
-            <element signature="e#144#202#0" />
-            <element signature="e#215#505#0" />
-            <element signature="e#370#502#0" />
-            <element signature="e#520#670#0" />
-            <element signature="e#680#781#0" />
-            <element signature="e#790#1012#0" />
-            <element signature="e#980#1009#0" />
-            <element signature="e#1022#1169#0" />
-            <element signature="e#1179#1328#0" />
-            <element signature="e#1340#1443#0" />
-            <element signature="e#1452#1558#0" />
-            <element signature="e#1569#1596#0" />
-            <element signature="e#1604#2277#0" />
-            <element signature="e#1928#2175#0" />
-            <element signature="e#2184#2274#0" />
-            <element signature="e#2245#2270#0" />
-            <element signature="e#2285#2681#0" />
-            <element signature="e#2379#2628#0" />
-            <element signature="e#2634#2678#0" />
-            <element signature="e#2690#2711#0" />
-            <element signature="e#2718#3238#0" />
-            <element signature="e#2870#3048#0" />
-            <element signature="e#3058#3235#0" />
-            <element signature="e#3242#4453#0" />
-            <element signature="e#3299#3482#0" />
-            <element signature="e#3306#3478#0" />
-            <element signature="e#3393#3473#0" />
-            <element signature="e#3489#4228#0" />
-            <element signature="e#3497#4224#0" />
-            <element signature="e#3741#3768#0" />
-            <element signature="e#3778#4002#0" />
-            <element signature="e#4014#4219#0" />
-            <element signature="e#4239#4246#0" />
-            <element signature="e#4251#4450#0" />
-            <element signature="e#4371#4446#0" />
-            <element signature="e#4472#4578#0" />
-            <element signature="e#4547#4575#0" />
-            <element signature="e#4588#5785#0" />
-            <element signature="e#4616#4759#0" />
-            <element signature="e#4830#4903#0" />
-            <element signature="e#4934#4957#0" />
-            <element signature="e#4991#5010#0" />
-            <element signature="e#5022#5044#0" />
-            <element signature="e#5093#5116#0" />
-            <element signature="e#5145#5389#0" />
-            <element signature="e#5348#5385#0" />
-            <element signature="e#5415#5629#0" />
-            <element signature="e#5654#5782#0" />
-            <element signature="e#5797#6944#0" />
-            <element signature="e#5825#5968#0" />
-            <element signature="e#6039#6112#0" />
-            <element signature="e#6143#6166#0" />
-            <element signature="e#6200#6219#0" />
-            <element signature="e#6231#6253#0" />
-            <element signature="e#6302#6325#0" />
-            <element signature="e#6354#6548#0" />
-            <element signature="e#6574#6788#0" />
-            <element signature="e#6813#6941#0" />
-            <element signature="e#6971#7404#0" />
-            <element signature="e#7143#7400#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/detail.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="109" column="5" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
-          <folding>
-            <element signature="e#224#249#0" />
-            <element signature="e#261#1825#0" />
-            <element signature="e#289#438#0" />
-            <element signature="e#443#592#0" />
-            <element signature="e#596#686#0" />
-            <element signature="e#691#1791#0" />
-            <element signature="e#752#947#0" />
-            <element signature="e#760#942#0" />
-            <element signature="e#851#936#0" />
-            <element signature="e#955#1550#0" />
-            <element signature="e#964#1545#0" />
-            <element signature="e#1157#1186#0" />
-            <element signature="e#1200#1329#0" />
-            <element signature="e#1340#1433#0" />
-            <element signature="e#1446#1539#0" />
-            <element signature="e#1562#1570#0" />
-            <element signature="e#1576#1787#0" />
-            <element signature="e#1702#1782#0" />
-            <element signature="e#1797#1822#0" />
-            <element signature="e#2445#2484#0" />
-            <element signature="e#2497#2579#0" />
-            <element signature="e#2587#3916#0" />
-            <element signature="e#2807#3043#0" />
-            <element signature="e#3052#3332#0" />
-            <element signature="e#3161#3328#0" />
-            <element signature="e#3345#3625#0" />
-            <element signature="e#3454#3621#0" />
-            <element signature="e#3634#3913#0" />
-            <element signature="e#3743#3909#0" />
-            <element signature="e#3926#4462#0" />
-            <element signature="e#4094#4272#0" />
-            <element signature="e#4282#4459#0" />
-            <element signature="e#4477#4647#0" />
-            <element signature="e#4662#4689#0" />
-            <element signature="e#4096#4691#0" />
-            <element signature="e#4240#4688#0" />
-            <element signature="e#4387#4622#0" />
-            <element signature="e#4549#4576#0" />
-            <element signature="e#4590#4617#0" />
-            <element signature="e#4647#4684#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/foto.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -814,30 +695,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/megalos.js">
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1185">
+          <caret line="79" column="53" selection-end-line="98" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/megalos.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/megalos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret column="258259" lean-forward="true" selection-start-column="258259" selection-end-column="258259" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/megalos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="88" column="15" lean-forward="true" selection-start-line="88" selection-start-column="15" selection-end-line="88" selection-end-column="15" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/index2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="238">
+          <caret line="42" column="26" lean-forward="true" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index2.php">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="91" column="24" lean-forward="true" selection-end-line="95" selection-end-column="6" />
+        <state relative-caret-position="652">
+          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/filter.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="192" column="17" selection-start-line="192" selection-start-column="17" selection-end-line="192" selection-end-column="17" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#!!top" />
+            <element signature="e#35#135#0" />
+            <element signature="e#144#202#0" />
+            <element signature="e#215#505#0" />
+            <element signature="e#370#502#0" />
+            <element signature="e#520#670#0" />
+            <element signature="e#680#781#0" />
+            <element signature="e#790#1012#0" />
+            <element signature="e#980#1009#0" />
+            <element signature="e#1022#1169#0" />
+            <element signature="e#1179#1328#0" />
+            <element signature="e#1340#1443#0" />
+            <element signature="e#1452#1558#0" />
+            <element signature="e#1569#1596#0" />
+            <element signature="e#1604#2277#0" />
+            <element signature="e#1928#2175#0" />
+            <element signature="e#2184#2274#0" />
+            <element signature="e#2245#2270#0" />
+            <element signature="e#2285#2681#0" />
+            <element signature="e#2379#2628#0" />
+            <element signature="e#2634#2678#0" />
+            <element signature="e#2690#2711#0" />
+            <element signature="e#2718#3238#0" />
+            <element signature="e#2870#3048#0" />
+            <element signature="e#3058#3235#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/detail.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="e#224#249#0" />
+            <element signature="e#261#1825#0" />
+            <element signature="e#289#438#0" />
+            <element signature="e#443#592#0" />
+            <element signature="e#596#686#0" />
+            <element signature="e#691#1791#0" />
+            <element signature="e#752#947#0" />
+            <element signature="e#760#942#0" />
+            <element signature="e#851#936#0" />
+            <element signature="e#955#1550#0" />
+            <element signature="e#964#1545#0" />
+            <element signature="e#1157#1186#0" />
+            <element signature="e#1200#1329#0" />
+            <element signature="e#1340#1433#0" />
+            <element signature="e#1446#1539#0" />
+            <element signature="e#1562#1570#0" />
+            <element signature="e#1576#1787#0" />
+            <element signature="e#1702#1782#0" />
+            <element signature="e#1797#1822#0" />
           </folding>
         </state>
       </provider>
